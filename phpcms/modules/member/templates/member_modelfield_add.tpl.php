@@ -27,6 +27,7 @@ $(function(){
 		onwait : "<?php echo L('connecting_please_wait')?>"
 	});
 	$("#formtype").formValidator({onshow:"<?php echo L('filedtype_need')?>",onfocus:"<?php echo L('filedtype_need')?>",oncorrect:"<?php echo L('input_correct')?>",defaultvalue:""}).inputValidator({min:1,onerror: "<?php echo L('filedtype_need')?>!"});
+	$("#mtype").formValidator({onshow:"<?php echo L('mtype_need')?>",onfocus:"<?php echo L('mtype_need')?>",oncorrect:"<?php echo L('input_correct')?>",defaultvalue:""}).inputValidator({min:1,onerror: "<?php echo L('mtype_need')?>!"});
 	$("#name").formValidator({onshow:"<?php echo L('filed_nickname_need')?>",onfocus:"<?php echo L('filed_nickname_need')?>",oncorrect:"<?php echo L('input_correct')?>"}).inputValidator({min:1,onerror:"<?php echo L('filed_nickname_need')?>"});
 })
 
@@ -42,6 +43,12 @@ $(function(){
 		  <th><strong><?php echo L('filedtype')?></strong><br /></th>
 		  <td>
 			<?php echo form::select($fields,'','name="info[formtype]" id="formtype" onchange="javascript:field_setting(this.value);"',L('filedtype_need'));?>
+		  </td>
+		</tr>
+		<tr> 
+		  <th><strong><?php echo L('mtype')?></strong><br /></th>
+		  <td>
+			<?php echo form::select($mtypeList,'','name="info[mtype]" id="mtype" ',L('mtype_need'));?>
 		  </td>
 		</tr>
 		<tr> 
@@ -112,6 +119,10 @@ $(function(){
 		<tr> 
 		  <th><strong><?php echo L('isadd_condition')?></strong></th>
 		  <td><input type="radio" name="info[isadd]" value="1" checked><?php echo L('yes')?><input type="radio" name="info[isadd]" value="0" ><?php echo L('no')?></td>
+		</tr>
+		<tr> 
+		  <th><strong><?php echo L('isadd_reg_condition')?></strong></th>
+		  <td><input type="radio" name="info[isaddReg]" value="1" checked><?php echo L('yes')?><input type="radio" name="info[isaddReg]" value="0" ><?php echo L('no')?></td>
 		</tr>
 		<tr> 
 		  <th><strong><?php echo L('isomnipotent_condition')?></strong></th>

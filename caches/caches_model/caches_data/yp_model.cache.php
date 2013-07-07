@@ -1,8 +1,8 @@
 <?php
 return array (
-  13 => 
+  12 => 
   array (
-    'modelid' => '13',
+    'modelid' => '12',
     'siteid' => '1',
     'name' => '新闻',
     'description' => '',
@@ -13,7 +13,7 @@ return array (
   \'meta_keywords\' => \'中国最全的黄页信息\',
   \'meta_description\' => \'中国最全的黄页信息\',
 )',
-    'addtime' => '1373167600',
+    'addtime' => '1373201196',
     'items' => '0',
     'enablesearch' => '1',
     'disabled' => '0',
@@ -22,15 +22,12 @@ return array (
     'list_template' => '',
     'show_template' => '',
     'js_template' => '',
-    'admin_list_template' => '',
-    'member_add_template' => '',
-    'member_list_template' => '',
     'sort' => '0',
     'type' => '5',
   ),
-  14 => 
+  13 => 
   array (
-    'modelid' => '14',
+    'modelid' => '13',
     'siteid' => '1',
     'name' => '产品',
     'description' => '',
@@ -41,7 +38,7 @@ return array (
   \'meta_keywords\' => \'C2C,购物平台,正品保障\',
   \'meta_description\' => \'亚洲最大网上购物网站——打造的在线B2C购物平台（B2C，Business to Customer）。在商城购物，享受100%正品保障、7天退换货、提供发票的服务。加入商城，将为全新的B2C事业创造更多的奇迹。\',
 )',
-    'addtime' => '1373167600',
+    'addtime' => '1373201196',
     'items' => '0',
     'enablesearch' => '1',
     'disabled' => '0',
@@ -50,15 +47,12 @@ return array (
     'list_template' => 'list_product',
     'show_template' => 'show_product',
     'js_template' => '',
-    'admin_list_template' => '',
-    'member_add_template' => '',
-    'member_list_template' => '',
     'sort' => '0',
     'type' => '5',
   ),
-  15 => 
+  14 => 
   array (
-    'modelid' => '15',
+    'modelid' => '14',
     'siteid' => '1',
     'name' => '商机',
     'description' => '',
@@ -69,7 +63,7 @@ return array (
   \'meta_keywords\' => \'C2C,购物平台,正品保障\',
   \'meta_description\' => \'亚洲最大网上购物网站——打造的在线B2C购物平台（B2C，Business to Customer）。在商城购物，享受100%正品保障、7天退换货、提供发票的服务。加入商城，将为全新的B2C事业创造更多的奇迹。\',
 )',
-    'addtime' => '1373167600',
+    'addtime' => '1373201196',
     'items' => '0',
     'enablesearch' => '1',
     'disabled' => '0',
@@ -78,9 +72,6 @@ return array (
     'list_template' => 'list_buy',
     'show_template' => 'show_buy',
     'js_template' => '',
-    'admin_list_template' => '',
-    'member_add_template' => '',
-    'member_list_template' => '',
     'sort' => '0',
     'type' => '5',
   ),

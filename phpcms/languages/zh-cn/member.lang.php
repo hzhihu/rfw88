@@ -259,6 +259,8 @@ $LANG['collect'] = '收藏夹';
 $LANG['filedname_incorrect'] = '字段名称不正确';
 $LANG['filedtype_need'] = '请选择字段类型';
 $LANG['filedtype'] = '字段类型';
+$LANG['mtype'] = '所属分类';
+$LANG['mtype_need'] = '请选择所属分类';
 $LANG['input_correct'] = '输入正确';
 $LANG['filed_nickname_need'] = '请输入别名';
 $LANG['move_member_model_alert'] = '移动模型会员，将会把原有模型里的会员信息删除，不能修复。';
@@ -299,6 +301,7 @@ $LANG['unique'] = '值唯一';
 $LANG['can_empty'] = '是否为注册必填信息';
 $LANG['search_condition'] = '作为搜索条件';
 $LANG['isadd_condition'] = '是否在前台显示';
+$LANG['isadd_reg_condition'] = '是否在前台注册时显示';
 $LANG['isomnipotent_condition'] = '作为万能字段的附属字段';
 $LANG['deny_set_field_group'] = '禁止设置字段值的会员组';
 $LANG['deny_set_field_role'] = '禁止设置字段值的角色';
@@ -408,5 +411,16 @@ $LANG['get_verify'] = '获取验证码验证';
 $LANG['no_checksms'] = '不验证';
 $LANG['user_sendsms_title'] = '用户自发短信提示语';
 $LANG['param_error'] = '参数格式错误';
+
+
+$LANG['TYPE_NAME']='分类名称';
+$LANG['MEMBER_TYPE']='分类名称';
+$LANG['TYPE_NAME_EMPTY']='分类名称';
+$LANG['TYPE_NAME_ALREADY_EXIST']='分类名称已经存在';
+$LANG['TYPE_DESC']='分类描述';
+$LANG['TYPE_VIEW']='分类显示';
+$LANG['TYPE_YES']='显示';
+$LANG['TYPE_NO']='不显示';
+$LANG['MEMBER_TYPE_ADD']='新增分类';
 
 ?>

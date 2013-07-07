@@ -62,3 +62,8 @@
 <?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
 <?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
 <?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-08 00:52:11 | 2 | require(/Volumes/DATA/www/phpcms/rfw88/phpcms/modules/member/fields//config.inc.php): failed to open stream: No such file or directory | phpcms/modules/member/member_modelfield.php | 206
+<?php exit;?>07-08 01:00:56 | 2 | require(/Volumes/DATA/www/phpcms/rfw88/phpcms/modules/member/fields//config.inc.php): failed to open stream: No such file or directory | phpcms/modules/member/member_modelfield.php | 206
+<?php exit;?>07-08 01:01:50 | 2 | require(/Volumes/DATA/www/phpcms/rfw88/phpcms/modules/member/fields//config.inc.php): failed to open stream: No such file or directory | phpcms/modules/member/member_modelfield.php | 206
+<?php exit;?>07-08 01:02:34 | 2 | require(/Volumes/DATA/www/phpcms/rfw88/phpcms/modules/member/fields//config.inc.php): failed to open stream: No such file or directory | phpcms/modules/member/member_modelfield.php | 206
+<?php exit;?>07-08 01:12:26 | 2 | require(/Volumes/DATA/www/phpcms/rfw88/phpcms/modules/member/fields//config.inc.php): failed to open stream: No such file or directory | phpcms/modules/member/member_modelfield.php | 216

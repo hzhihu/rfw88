@@ -68,6 +68,17 @@ class member_modelfield extends admin {
 				$grouplist[$_key] = $_value['name'];
 			}
 			
+			//会员模型字段分类
+			$mtype_cache=getcache('membertype','member');
+			$mtypeList=array();
+			if(!empty($mtype_cache))
+			{
+			    foreach ($mtype_cache as $k=>$v)
+			    {
+			        $mtypeList[$v['id']]=$v['name'];
+			    }
+			}
+			
 			header("Cache-control: private");
 			include $this->admin_tpl('member_modelfield_add');
 		}
@@ -130,6 +141,18 @@ class member_modelfield extends admin {
 			foreach($group_cache as $_key=>$_value) {
 				$grouplist[$_key] = $_value['name'];
 			}
+			
+			//会员模型字段分类
+			$mtype_cache=getcache('membertype','member');
+			$mtypeList=array();
+			if(!empty($mtype_cache))
+			{
+			    foreach ($mtype_cache as $k=>$v)
+			    {
+			        $mtypeList[$v['id']]=$v['name'];
+			    }
+			}
+			
 			header("Cache-control: private");
 			include $this->admin_tpl('member_modelfield_edit');
 		}
