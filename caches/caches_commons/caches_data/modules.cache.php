@@ -9,13 +9,14 @@ return array (
     'version' => '1.0',
     'description' => '',
     'setting' => 'array (
-  \'admin_email\' => \'hzhihu@gmail.com\',
+  \'admin_email\' => \'phpcms@phpcms.cn\',
+  \'adminaccessip\' => \'0\',
   \'maxloginfailedtimes\' => \'8\',
+  \'maxiplockedtime\' => \'15\',
   \'minrefreshtime\' => \'2\',
   \'mail_type\' => \'1\',
   \'mail_server\' => \'smtp.qq.com\',
   \'mail_port\' => \'25\',
-  \'category_ajax\' => \'0\',
   \'mail_user\' => \'phpcms.cn@foxmail.com\',
   \'mail_auth\' => \'1\',
   \'mail_from\' => \'phpcms.cn@foxmail.com\',
@@ -301,20 +302,6 @@ return array (
     'disabled' => '0',
     'installdate' => '2010-09-15',
     'updatedate' => '2010-09-15',
-  ),
-  'video' => 
-  array (
-    'module' => 'video',
-    'name' => '视频库',
-    'url' => '',
-    'iscore' => '0',
-    'version' => '1.0',
-    'description' => '',
-    'setting' => '',
-    'listorder' => '0',
-    'disabled' => '0',
-    'installdate' => '2012-09-28',
-    'updatedate' => '2012-09-28',
   ),
   'announce' => 
   array (

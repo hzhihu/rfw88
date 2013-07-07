@@ -42,3 +42,23 @@
 <?php exit;?>07-07 14:26:11 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
 <?php exit;?>07-07 14:26:11 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
 <?php exit;?>07-07 14:39:36 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-07 20:46:24 | 2 | file_get_contents(http://sms.phpcms.cn/api.php?op=sms_get_productlist&sms_uid=&sms_pid=&sms_passwd=): failed to open stream: Operation timed out | phpcms/modules/sms/classes/smsapi.class.php | 272
+<?php exit;?>07-07 20:46:55 | 2 | file_get_contents(http://open.phpcms.cn/index.php?m=open&c=api&a=get_recommed_applist&s=5&p=1): failed to open stream: Operation timed out | phpcms/modules/admin/plugin.php | 265
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
+<?php exit;?>07-07 20:56:20 | 2 | in_array() expects parameter 2 to be array, null given | phpcms/modules/yp/additional.php | 53
