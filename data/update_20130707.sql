@@ -18,3 +18,8 @@ CREATE TABLE `v9_member_type` (
 
 -- 增加所属于模型分类
 ALTER TABLE `v9_model_field` ADD `mtype` TINYINT(1)  UNSIGNED  NOT NULL  DEFAULT '0'  COMMENT '所属于模型分类'  AFTER `formtype`;
+
+
+-- 增加会员模型是否注册时显示字段
+ALTER TABLE `v9_model` ADD `reg_view` TINYINT(1)  UNSIGNED  NULL  DEFAULT '1'  COMMENT '是否前台显示'  AFTER `js_template`;
+UPDATE `v9_model` SET `reg_view` = '0' WHERE `modelid` = '10';
