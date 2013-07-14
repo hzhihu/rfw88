@@ -10,17 +10,16 @@ return array (
     'description' => '',
     'setting' => 'array (
   \'admin_email\' => \'phpcms@phpcms.cn\',
-  \'adminaccessip\' => \'0\',
   \'maxloginfailedtimes\' => \'8\',
-  \'maxiplockedtime\' => \'15\',
   \'minrefreshtime\' => \'2\',
   \'mail_type\' => \'1\',
   \'mail_server\' => \'smtp.qq.com\',
   \'mail_port\' => \'25\',
-  \'mail_user\' => \'phpcms.cn@foxmail.com\',
+  \'category_ajax\' => \'0\',
+  \'mail_user\' => \'szwang@vip.qq.com\',
   \'mail_auth\' => \'1\',
-  \'mail_from\' => \'phpcms.cn@foxmail.com\',
-  \'mail_password\' => \'\',
+  \'mail_from\' => \'szwang@vip.qq.com\',
+  \'mail_password\' => \'rabbit19880419\',
   \'errorlog_size\' => \'20\',
 )',
     'listorder' => '0',
@@ -40,6 +39,9 @@ return array (
   \'allowregister\' => \'1\',
   \'choosemodel\' => \'1\',
   \'enablemailcheck\' => \'0\',
+  \'enablcodecheck\' => \'0\',
+  \'mobile_checktype\' => \'0\',
+  \'user_sendsms_title\' => \'\',
   \'registerverify\' => \'0\',
   \'showapppoint\' => \'0\',
   \'rmb_point_rate\' => \'10\',
@@ -491,125 +493,6 @@ return array (
     'disabled' => '0',
     'installdate' => '2011-09-02',
     'updatedate' => '2011-09-02',
-  ),
-  'yp' => 
-  array (
-    'module' => 'yp',
-    'name' => '企业黄页',
-    'url' => 'yp/',
-    'iscore' => '0',
-    'version' => '1.0',
-    'description' => '企业黄页',
-    'setting' => 'array (
-  \'position\' => 
-  array (
-    1 => 
-    array (
-      \'posid\' => \'9\',
-      \'name\' => \'全局置顶\',
-      \'point\' => \'1\',
-      \'num\' => \'10\',
-    ),
-    2 => 
-    array (
-      \'posid\' => \'8\',
-      \'name\' => \'列表置顶\',
-      \'point\' => \'2\',
-      \'num\' => \'5\',
-    ),
-  ),
-  \'ischeck\' => \'1\',
-  \'isbusiness\' => \'1\',
-  \'enable_rewrite\' => \'0\',
-  \'encode_page_cache\' => \'1\',
-  \'seo_title\' => \'北京黄页大全\',
-  \'seo_keywords\' => \'北京黄页大全 企业库 网上商店\',
-  \'seo_description\' => \'本站是北京地区最大、最全的企业库，欢迎入驻！\',
-  \'priv\' => 
-  array (
-    8 => 
-    array (
-      \'view\' => 
-      array (
-        20 => \'1\',
-        19 => \'1\',
-        18 => \'1\',
-      ),
-    ),
-    2 => 
-    array (
-      \'allowpostverify\' => \'1\',
-      20 => \'1\',
-      \'view\' => 
-      array (
-        20 => \'1\',
-        19 => \'1\',
-        18 => \'1\',
-      ),
-      19 => \'1\',
-      18 => \'1\',
-    ),
-    6 => 
-    array (
-      \'allowpostverify\' => \'1\',
-      20 => \'1\',
-      \'view\' => 
-      array (
-        20 => \'1\',
-        19 => \'1\',
-        18 => \'1\',
-      ),
-      18 => \'1\',
-    ),
-    4 => 
-    array (
-      \'allowpostverify\' => \'1\',
-      20 => \'1\',
-      \'view\' => 
-      array (
-        20 => \'1\',
-        19 => \'1\',
-        18 => \'1\',
-      ),
-      19 => \'1\',
-    ),
-    5 => 
-    array (
-      \'allowpostverify\' => \'1\',
-      20 => \'1\',
-      \'view\' => 
-      array (
-        20 => \'1\',
-        19 => \'1\',
-        18 => \'1\',
-      ),
-      19 => \'1\',
-      18 => \'1\',
-    ),
-    1 => 
-    array (
-      \'view\' => 
-      array (
-        20 => \'1\',
-        19 => \'1\',
-        18 => \'1\',
-      ),
-    ),
-    7 => 
-    array (
-      \'view\' => 
-      array (
-        20 => \'1\',
-        19 => \'1\',
-        18 => \'1\',
-      ),
-    ),
-  ),
-)',
-    'listorder' => '0',
-    'disabled' => '0',
-    'installdate' => '2013-07-07',
-    'updatedate' => '2013-07-07',
   ),
 );
 ?>

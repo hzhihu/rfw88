@@ -57,6 +57,7 @@ class index extends admin {
 			if(!$r) showmessage(L('user_not_exist'),'?m=admin&c=index&a=login');
 			$password = md5(md5(trim((!isset($_GET['card']) ? $_POST['password'] : $_SESSION['card_password']))).$r['encrypt']);
 			
+			//debug($password,$r['password'],$_GET['card']);
 			if($r['password'] != $password) {
 				$ip = ip();
 				if($rtime && $rtime['times'] < $maxloginfailedtimes) {

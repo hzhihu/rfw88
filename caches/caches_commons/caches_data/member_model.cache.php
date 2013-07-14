@@ -4,8 +4,8 @@ return array (
   array (
     'modelid' => '10',
     'siteid' => '1',
-    'name' => '普通会员',
-    'description' => '普通会员',
+    'name' => '会员模型',
+    'description' => '会员模型',
     'tablename' => 'member_detail',
     'setting' => '',
     'addtime' => '0',
@@ -17,6 +17,7 @@ return array (
     'list_template' => '',
     'show_template' => '',
     'js_template' => '',
+    'reg_view' => '0',
     'sort' => '0',
     'type' => '2',
   ),

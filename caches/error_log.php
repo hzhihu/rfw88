@@ -67,3 +67,28 @@
 <?php exit;?>07-08 01:01:50 | 2 | require(/Volumes/DATA/www/phpcms/rfw88/phpcms/modules/member/fields//config.inc.php): failed to open stream: No such file or directory | phpcms/modules/member/member_modelfield.php | 206
 <?php exit;?>07-08 01:02:34 | 2 | require(/Volumes/DATA/www/phpcms/rfw88/phpcms/modules/member/fields//config.inc.php): failed to open stream: No such file or directory | phpcms/modules/member/member_modelfield.php | 206
 <?php exit;?>07-08 01:12:26 | 2 | require(/Volumes/DATA/www/phpcms/rfw88/phpcms/modules/member/fields//config.inc.php): failed to open stream: No such file or directory | phpcms/modules/member/member_modelfield.php | 216
+<?php exit;?>07-14 15:33:09 | 2 | Invalid argument supplied for foreach() | phpcms/modules/content/classes/content_tag.class.php | 208
+<?php exit;?>07-14 15:33:09 | 2 | Invalid argument supplied for foreach() | phpcms/libs/functions/global.func.php | 1816
+<?php exit;?>07-14 15:33:09 | 2 | Invalid argument supplied for foreach() | phpcms/modules/content/classes/content_tag.class.php | 208
+<?php exit;?>07-14 15:38:39 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:38:44 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:38:46 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:38:50 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:38:53 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:38:57 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:39:03 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:39:33 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:39:36 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:39:38 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:39:39 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:39:39 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:39:43 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:45:45 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:45:46 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:45:47 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-14 15:48:57 | 2048 | Non-static method card::sys_auth() should not be called statically | phpcms/modules/admin/classes/card.class.php | 23
+<?php exit;?>07-14 16:01:08 | 2048 | Non-static method card::sys_auth() should not be called statically | phpcms/modules/admin/classes/card.class.php | 50
+<?php exit;?>07-14 16:01:08 | 2048 | Non-static method card::sys_auth() should not be called statically | phpcms/modules/admin/classes/card.class.php | 51
+<?php exit;?>07-14 16:02:02 | 2048 | Non-static method card::sys_auth() should not be called statically | phpcms/modules/admin/classes/card.class.php | 50
+<?php exit;?>07-14 16:24:24 | 2 | extract() expects parameter 1 to be array, null given | phpcms/modules/content/classes/html.class.php | 182
+<?php exit;?>07-14 16:30:10 | 8192 | Function split() is deprecated | caches/caches_model/caches_data/content_update.class.php | 70

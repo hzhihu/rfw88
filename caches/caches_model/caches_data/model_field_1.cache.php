@@ -14,6 +14,7 @@ return array (
     'pattern' => '/^[0-9]{1,6}$/',
     'errortips' => '请选择栏目',
     'formtype' => 'catid',
+    'mtype' => '0',
     'setting' => 'array (
   \'defaultvalue\' => \'\',
 )',
@@ -31,6 +32,7 @@ return array (
     'listorder' => '1',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'defaultvalue' => '',
   ),
   'typeid' => 
@@ -47,6 +49,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'typeid',
+    'mtype' => '0',
     'setting' => 'array (
   \'minnumber\' => \'\',
   \'defaultvalue\' => \'\',
@@ -65,6 +68,7 @@ return array (
     'listorder' => '2',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'minnumber' => '',
     'defaultvalue' => '',
   ),
@@ -82,6 +86,7 @@ return array (
     'pattern' => '',
     'errortips' => '请输入标题',
     'formtype' => 'title',
+    'mtype' => '0',
     'setting' => '',
     'formattribute' => '',
     'unsetgroupids' => '',
@@ -97,6 +102,7 @@ return array (
     'listorder' => '4',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
   ),
   'keywords' => 
   array (
@@ -112,6 +118,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'keyword',
+    'mtype' => '0',
     'setting' => 'array (
   \'size\' => \'100\',
   \'defaultvalue\' => \'\',
@@ -130,6 +137,7 @@ return array (
     'listorder' => '7',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'size' => '100',
     'defaultvalue' => '',
   ),
@@ -147,6 +155,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'copyfrom',
+    'mtype' => '0',
     'setting' => 'array (
   \'defaultvalue\' => \'\',
 )',
@@ -164,6 +173,7 @@ return array (
     'listorder' => '8',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'defaultvalue' => '',
   ),
   'description' => 
@@ -180,6 +190,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'textarea',
+    'mtype' => '0',
     'setting' => 'array (
   \'width\' => \'98\',
   \'height\' => \'46\',
@@ -200,6 +211,7 @@ return array (
     'listorder' => '10',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'width' => '98',
     'height' => '46',
     'defaultvalue' => '',
@@ -219,6 +231,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'datetime',
+    'mtype' => '0',
     'setting' => 'array (
   \'dateformat\' => \'int\',
   \'format\' => \'Y-m-d H:i:s\',
@@ -239,6 +252,7 @@ return array (
     'listorder' => '12',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'dateformat' => 'int',
     'format' => 'Y-m-d H:i:s',
     'defaulttype' => '1',
@@ -260,6 +274,7 @@ return array (
     'pattern' => '',
     'errortips' => '内容不能为空',
     'formtype' => 'editor',
+    'mtype' => '0',
     'setting' => 'array (
   \'toolbar\' => \'full\',
   \'defaultvalue\' => \'\',
@@ -282,6 +297,7 @@ return array (
     'listorder' => '13',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'toolbar' => 'full',
     'defaultvalue' => '',
     'enablekeylink' => '1',
@@ -303,6 +319,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'image',
+    'mtype' => '0',
     'setting' => 'array (
   \'size\' => \'50\',
   \'defaultvalue\' => \'\',
@@ -328,6 +345,7 @@ return array (
     'listorder' => '14',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'size' => '50',
     'defaultvalue' => '',
     'show_type' => '1',
@@ -352,6 +370,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'omnipotent',
+    'mtype' => '0',
     'setting' => 'array (
   \'formtext\' => \'<input type=\\\'hidden\\\' name=\\\'info[relation]\\\' id=\\\'relation\\\' value=\\\'{FIELD_VALUE}\\\' style=\\\'50\\\' >
 <ul class="list-dot" id="relation_text"></ul>
@@ -378,6 +397,7 @@ return array (
     'listorder' => '15',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'formtext' => '<input type=\'hidden\' name=\'info[relation]\' id=\'relation\' value=\'{FIELD_VALUE}\' style=\'50\' >
 <ul class="list-dot" id="relation_text"></ul>
 <div>
@@ -403,6 +423,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'pages',
+    'mtype' => '0',
     'setting' => '',
     'formattribute' => '',
     'unsetgroupids' => '-99',
@@ -418,6 +439,7 @@ return array (
     'listorder' => '16',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
   ),
   'inputtime' => 
   array (
@@ -433,6 +455,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'datetime',
+    'mtype' => '0',
     'setting' => 'array (
   \'fieldtype\' => \'int\',
   \'format\' => \'Y-m-d H:i:s\',
@@ -452,6 +475,7 @@ return array (
     'listorder' => '17',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'fieldtype' => 'int',
     'format' => 'Y-m-d H:i:s',
     'defaulttype' => '0',
@@ -470,6 +494,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'posid',
+    'mtype' => '0',
     'setting' => 'array (
   \'cols\' => \'4\',
   \'width\' => \'125\',
@@ -488,6 +513,7 @@ return array (
     'listorder' => '18',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'cols' => '4',
     'width' => '125',
   ),
@@ -505,6 +531,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'groupid',
+    'mtype' => '0',
     'setting' => 'array (
   \'groupids\' => \'\',
 )',
@@ -522,6 +549,7 @@ return array (
     'listorder' => '19',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'groupids' => '',
   ),
   'voteid' => 
@@ -538,6 +566,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'omnipotent',
+    'mtype' => '0',
     'setting' => 'array (
   \'formtext\' => \'<input type=\\\'text\\\' name=\\\'info[voteid]\\\' id=\\\'voteid\\\' value=\\\'{FIELD_VALUE}\\\' size=\\\'3\\\'> 
 <input type=\\\'button\\\' value="选择已有投票" onclick="omnipotent(\\\'selectid\\\',\\\'?m=vote&c=vote&a=public_get_votelist&from_api=1\\\',\\\'选择已有投票\\\')" class="button">
@@ -559,6 +588,7 @@ return array (
     'listorder' => '21',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'formtext' => '<input type=\'text\' name=\'info[voteid]\' id=\'voteid\' value=\'{FIELD_VALUE}\' size=\'3\'> 
 <input type=\'button\' value="选择已有投票" onclick="omnipotent(\'selectid\',\'?m=vote&c=vote&a=public_get_votelist&from_api=1\',\'选择已有投票\')" class="button">
 <input type=\'button\' value="新增投票" onclick="omnipotent(\'addvote\',\'?m=vote&c=vote&a=add&from_api=1\',\'添加投票\',0)" class="button">',
@@ -579,6 +609,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'islink',
+    'mtype' => '0',
     'setting' => '',
     'formattribute' => '',
     'unsetgroupids' => '',
@@ -594,6 +625,7 @@ return array (
     'listorder' => '30',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
   ),
   'url' => 
   array (
@@ -609,6 +641,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'text',
+    'mtype' => '0',
     'setting' => '',
     'formattribute' => '',
     'unsetgroupids' => '',
@@ -624,6 +657,7 @@ return array (
     'listorder' => '50',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
   ),
   'listorder' => 
   array (
@@ -639,6 +673,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'number',
+    'mtype' => '0',
     'setting' => '',
     'formattribute' => '',
     'unsetgroupids' => '',
@@ -654,6 +689,7 @@ return array (
     'listorder' => '51',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
   ),
   'template' => 
   array (
@@ -669,6 +705,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'template',
+    'mtype' => '0',
     'setting' => 'array (
   \'size\' => \'\',
   \'defaultvalue\' => \'\',
@@ -687,6 +724,7 @@ return array (
     'listorder' => '53',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'size' => '',
     'defaultvalue' => '',
   ),
@@ -704,6 +742,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'box',
+    'mtype' => '0',
     'setting' => 'array (
   \'options\' => \'允许评论|1
 不允许评论|0\',
@@ -730,6 +769,7 @@ return array (
     'listorder' => '54',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'options' => '允许评论|1
 不允许评论|0',
     'boxtype' => 'radio',
@@ -755,6 +795,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'box',
+    'mtype' => '0',
     'setting' => '',
     'formattribute' => '',
     'unsetgroupids' => '',
@@ -770,6 +811,7 @@ return array (
     'listorder' => '55',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
   ),
   'readpoint' => 
   array (
@@ -785,6 +827,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'readpoint',
+    'mtype' => '0',
     'setting' => 'array (
   \'minnumber\' => \'1\',
   \'maxnumber\' => \'99999\',
@@ -805,6 +848,7 @@ return array (
     'listorder' => '55',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
     'minnumber' => '1',
     'maxnumber' => '99999',
     'decimaldigits' => '0',
@@ -824,6 +868,7 @@ return array (
     'pattern' => '',
     'errortips' => '',
     'formtype' => 'text',
+    'mtype' => '0',
     'setting' => '',
     'formattribute' => '',
     'unsetgroupids' => '',
@@ -839,6 +884,7 @@ return array (
     'listorder' => '98',
     'disabled' => '0',
     'isomnipotent' => '0',
+    'isaddReg' => '0',
   ),
 );
 ?>
