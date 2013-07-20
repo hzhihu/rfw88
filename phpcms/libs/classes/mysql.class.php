@@ -29,6 +29,39 @@ final class mysql {
 	 */
 	public $querycount = 0;
 	
+	/**
+	 *
+	 * 当前数据库连接
+	 * @var object
+	 */
+	private $conn;
+	
+	private $query;
+	
+	/**
+	 *
+	 * 当前操作的sql
+	 * @var string
+	 */
+	private $sql;
+	
+	/**
+	 *
+	 * 当前操作的错误信息
+	 * @var string
+	 */
+	private $error = '';
+	
+	public $lastInsertID;
+	
+	/**
+	 *
+	 * 事务是否开启
+	 * @var int
+	 */
+	private $tranBool = false;
+	
+	
 	public function __construct() {
 
 	}
@@ -70,6 +103,7 @@ final class mysql {
 			return false;
 		}
 		$this->database = $this->config['database'];
+		$this->conn=$this->link;
 		return $this->link;
 	}
 
@@ -446,6 +480,381 @@ final class mysql {
 		}
 		$value = $q.$value.$q;
 		return $value;
+	}
+	
+	/**
+	 * 
+	 * @todo 此处为新加的数据库操作方法,方便操作数据库
+	 */
+	
+	/**
+	 *
+	 * 创建sql
+	 * @param string $sql
+	 */
+	public function createCommand ($sql)
+	{
+	    if(!is_resource($this->link)) {
+	        $this->connect();
+	    }
+	    
+	    $this->sql = $sql;
+	    return $this;
+	}
+	/**
+	 *绑定参数方法
+	 *@param string $source
+	 *@param string $replace
+	 */
+	public function bindParam($source,$replace){
+	    $this->sql = str_replace($source,$replace,$this->sql);
+	    return $this;
+	}
+	
+	/**
+	 * 执行 mysql_query 并返回其结果.
+	 */
+	public function querys ()
+	{
+	    if (! isset($this->sql) || empty($this->sql)) {
+	        $error = '未传入sql,请先执行createCommand ($sql)方法';
+	        $this->error($error);
+	        throw new Exception($error);
+	        return $this;
+	    }
+	    $this->query = mysql_query($this->sql, $this->conn);
+	    if ($this->query === false) {
+	        $error='sql执行失败,失败信息为:' . mysql_error($this->conn);
+	        $this->errors($error);
+	        throw new Exception($error);
+	        return $this;
+	    }
+	
+	    return $this;
+	}
+	
+	/**
+	 *
+	 * 返回一条记录
+	 */
+	public function read ()
+	{
+	    if (! isset($this->query) || empty($this->query)) {
+	        $this->error('query执行失败或者没有执行,请先执行createCommand ($sql)->query()方法');
+	        return false;
+	    }
+	
+	    return mysql_fetch_assoc($this->query);
+	}
+	
+	/**
+	 *
+	 * 返回多条记录
+	 */
+	public function queryAll ()
+	{
+	    if (! isset($this->sql) || empty($this->sql)) {
+	        $this->error('未传入sql,请先执行createCommand ($sql)方法');
+	        return $this;
+	    }
+	
+	    $this->querys();
+	    
+	    if ($this->query) {
+	        $count = mysql_num_rows($this->query);
+	    } else {
+	        return array();
+	    }
+	
+	    $return = array ();
+	    if ($count > 0) {
+	        while ( $row = mysql_fetch_assoc($this->query) ) {
+	            $return [] = $row;
+	        }
+	    }
+	    return $return;
+	}
+	
+	
+	/**
+	 * 方便合并,增加新的获取方式
+	 * @param string $sql
+	 * @return Ambigous <mysql, multitype:, multitype:multitype: >
+	 */
+	public function db_fetch_array($sql)
+	{
+	    return $this->createCommand($sql)->querys()->read();
+	}
+	
+	/**
+	 * 方便合并,增加新的获取方式
+	 * @param string $sql
+	 * @return Ambigous <mysql, multitype:, multitype:multitype: >
+	 */
+	public function db_fetch_arrays($sql)
+	{
+	    return $this->createCommand($sql)->queryAll();
+	}
+	
+	/**
+	 * 方便合并,增加新的获取方式
+	 * @param string $sql
+	 * @return Ambigous <mysql, multitype:, multitype:multitype: >
+	 */
+	public function db_query($sql)
+	{
+	    return $this->createCommand($sql)->querys();
+	}
+	
+	/**
+	 * 方便合并,增加新的获取方式
+	 * @param string $sql
+	 * @return Ambigous <mysql, multitype:, multitype:multitype: >
+	 */
+	public function db_querys($sql)
+	{
+	    return $this->createCommand($sql)->querys();
+	}
+	
+	/**
+	 * 方便合并,增加新的获取方式
+	 * @param string $sql
+	 * @return Ambigous <mysql, multitype:, multitype:multitype: >
+	 */
+	function db_insert_id(){
+	    return $this->last_insert_id();
+	}
+	
+	/**
+	 *
+	 * 执行无查询 SQL
+	 */
+	public function executes ()
+	{
+	    if (! isset($this->sql) || empty($this->sql)) {
+	        $this->error('未传入sql,请先执行createCommand ($sql)方法');
+	        return false;
+	    }
+	
+	    /**
+	     * @todo 由于mysql_query一次不能执行多条语句
+	     * 所以分成循环执行,但这样无法保证,每条都成功
+	     */
+	    if (substr_count($this->sql, ';') >= 2) {
+	        $sqlAry = explode(';', $this->sql);
+	        foreach ( $sqlAry as $key => $sql ) {
+	            $sql = trim($sql);
+	            if (! empty($sql)) {
+	                $query = mysql_query($sql, $this->conn);
+	                /**
+	                 * 多语句执行，如果有失败，抛出异常
+	                */
+	                if ($query===false) {
+	                    $error = mysql_error($this->conn);
+	                    throw new Exception($error);
+	                    return false;
+	                }
+	                $this->last_insert_id();
+	            }
+	        }
+	    } else {
+	        $query = mysql_query($this->sql, $this->conn);
+	        if ($query===false) {
+	            $error = mysql_error($this->conn);
+	            throw new Exception($error);
+	            return false;
+	        }
+	        $this->last_insert_id();
+	    }
+	    return $query;
+	}
+	
+	/**
+	 * 查询并返回结果中的第一行
+	 */
+	public function queryRow ()
+	{
+	    if (! isset($this->sql) || empty($this->sql)) {
+	        $this->error('未传入sql,请先执行createCommand ($sql)方法');
+	        return false;
+	    }
+	
+	    $this->querys();
+	
+	    return mysql_fetch_array($this->query);
+	}
+	
+	/**
+	 *
+	 * 查询并返回结果中第一行的第一个字段
+	 */
+	public function queryScalar ()
+	{
+	    if (! isset($this->sql) || empty($this->sql)) {
+	        $this->error('未传入sql,请先执行createCommand ($sql)方法');
+	        return false;
+	    }
+	
+	    $this->querys();
+	
+	    $count = mysql_num_rows($this->query);
+	
+	    if ($count > 0) {
+	        $row = mysql_fetch_array($this->query);
+	
+	        if ($row != false) {
+	            return array_shift($row);
+	        }
+	    }
+	    return false;
+	}
+	
+	/**
+	 *
+	 * 查询并返回结果中的第一列
+	 */
+	public function queryColumn ()
+	{
+	    if (! isset($this->sql) || empty($this->sql)) {
+	        $this->error('未传入sql,请先执行createCommand ($sql)方法');
+	        return false;
+	    }
+	
+	    $return = array ();
+	    $result = $this->queryAll();
+	    if (! empty($result)) {
+	        foreach ( $result as $key => $val ) {
+	            $return [] = array_shift($val);
+	        }
+	    }
+	    return $return;
+	}
+	
+	public function last_insert_id ()
+	{
+	    $this->lastInsertID = mysql_insert_id($this->conn);
+	    return $this->lastInsertID;
+	}
+	
+	/**
+	 * 计数.
+	 */
+	public function count ($sql)
+	{
+	    if (! isset($this->query) || empty($this->query)) {
+	        $this->error('query执行失败或者没有执行,请先执行createCommand ($sql)->query()方法');
+	        return false;
+	    }
+	
+	    return mysql_num_rows($this->query);
+	}
+	
+	/**
+	 * 开始一个事务.
+	 */
+	public function beginTransaction ()
+	{
+	    if ($this->tranBool === true) {
+	        $msg = '事务不能开启多次';
+	        $this->error($msg);
+	        throw new Exception($msg);
+	    }
+	    $query = mysql_query('begin');
+	    $this->tranBool = true;
+	    return $this;
+	}
+	
+	/**
+	 * 提交一个事务.
+	 */
+	public function commit ()
+	{
+	    if ($this->tranBool != true) {
+	        return false;
+	    }
+	    mysql_query('commit');
+	    $this->tranBool = false;
+	}
+	
+	/**
+	 * 回滚一个事务.
+	 */
+	public function rollBack ()
+	{
+	    if ($this->tranBool != true) {
+	        return false;
+	    }
+	    mysql_query('rollback');
+	    $this->tranBool = false;
+	}
+	
+	/**
+	 * 保存一条记录, 调用后, id被设置.
+	 * @param object $row
+	 */
+	function save ($table, &$row)
+	{
+	    $sqlA = '';
+	    foreach ( $row as $k => $v ) {
+	        $sqlA .= "`$k` = '$v',";
+	    }
+	
+	    $sqlA = substr($sqlA, 0, strlen($sqlA) - 1);
+	    $sql = "insert into `{$table}` set $sqlA";
+	    $this->querys($sql);
+	    if (is_object($row)) {
+	        $row->id = $this->last_insert_id();
+	    } else if (is_array($row)) {
+	        $row ['id'] = $this->last_insert_id();
+	    }
+	    return $row;
+	}
+	
+	/**
+	 * 更新$arr[id]所指定的记录.
+	 * @param array $row 要更新的记录, 键名为id的数组项的值指示了所要更新的记录.
+	 * @return int 影响的行数.
+	 * @param string $field 字段名, 默认为'id'.
+	 */
+	function updates ($table, &$row, $field = 'id')
+	{
+	    $sqlA = '';
+	    foreach ( $row as $k => $v ) {
+	        $sqlA .= "`$k` = '$v',";
+	    }
+	
+	    $sqlA = substr($sqlA, 0, strlen($sqlA) - 1);
+	    if (is_object($row)) {
+	        $id = $row->{$field};
+	    } else if (is_array($row)) {
+	        $id = $row [$field];
+	    }
+	    $sql = "update `{$table}` set $sqlA where `{$field}`='$id'";
+	    return $this->querys($sql);
+	}
+	
+	/**
+	 * 删除一条记录.
+	 * @param int $id 要删除的记录编号.
+	 * @return int 影响的行数.
+	 * @param string $field 字段名, 默认为'id'.
+	 */
+	function deletes ($table, $id, $field = 'id')
+	{
+	    $sql = "delete from `{$table}` where `{$field}`='{$id}'";
+	    return $this->querys($sql);
+	}
+	
+	public function errors ($msg)
+	{
+	    $this->error [] = $msg;
+	}
+	
+	public function __destruct ()
+	{
+	    if ($this->tranBool === true) {
+	        $this->rollBack();
+	    }
 	}
 }
 ?>

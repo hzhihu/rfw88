@@ -200,6 +200,16 @@ class model {
 	}
 	
 	/**
+	 * 返回表名
+	 * @param unknown_type $table
+	 * @return string
+	 */
+	final public function getTable($table)
+	{
+	    return $this->db_tablepre.$table;
+	}
+	
+	/**
 	 * 检查字段是否存在
 	 * @param $field 字段名
 	 * @return boolean
@@ -230,5 +240,10 @@ class model {
 	 */
 	final public function version() {
 		return $this->db->version();
+	}
+	
+	public function db ()
+	{
+	    return $this->db;
 	}
 }

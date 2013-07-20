@@ -6,7 +6,7 @@ return array (
   'enablcodecheck' => '0',
   'mobile_checktype' => '0',
   'user_sendsms_title' => '',
-  'registerverify' => '0',
+  'registerverify' => '1',
   'showapppoint' => '0',
   'rmb_point_rate' => '10',
   'defualtpoint' => '0',

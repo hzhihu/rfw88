@@ -548,4 +548,7 @@ $LANG['会员模型字段分类'] = '会员模型字段分类';
 $LANG['member_type_title'] = '模型字段分类管理';
 $LANG['member_auth'] = '会员认证管理';
 $LANG['member_real_auth'] = '实名认证';
+$LANG['member_auth_info'] = '用户认证信息';
+$LANG['member_auth_data'] = '客户证明材料';
+$LANG['area'] = '地区模块';
 ?>

@@ -2323,4 +2323,113 @@ function print_r_string ($arr, $first = true)
     if ($first)
         echo "</pre>\n";
 }
+
+/**
+ * 为了赶进度......~_~
+ * 
+ * 迁移来的模板引擎
+ */
+function rfwFastTpl($template,array $assign,array $otherConfig)
+{
+    ob_start();
+    if(isset($otherConfig['autoLoadNowDir']) && $otherConfig['autoLoadNowDir'])
+    {
+        $dir=realpath($otherConfig['autoLoadNowDir']);
+        $dirAry=dirname($dir);
+        $otherConfig['dir']=$dirAry;
+        $template=str_replace('.php', '', basename($dir));
+    }
+    $magic=pc_base::load_sys_class('magic');
+    //模板引擎的配置
+    $magic->left_tag = "{";
+    $magic->right_tag = "}";
+    $magic->force_compile = true;
+    $magic->compile_dir = "caches/compile";
+    $magic->plugins_dir = "magic/plugins";
+    $temlate_dir = isset($otherConfig['dir'])?$otherConfig['dir']:'themes/admin';
+    $magic->template_dir = $temlate_dir;
+    $magic->assign("tpldir",$temlate_dir);
+    
+    foreach ($assign as $k=>$v)
+    {
+        $magic->assign($k,$v);
+    }
+    $magic->display($template);
+    
+    $contents = ob_get_contents();
+    ob_end_clean();
+    
+    return $contents;
+}
+
+
+/**
+ * 
+ * 对旧系统的URL进行重新组装
+ */
+function get_query_url($M,$C,$A='',array $_A=array())
+{
+    $url='';
+    if(empty($A)){
+        $url="?m={$M}&c={$C}";
+        if(isset($_GET['rfw']) && !empty($_GET['rfw']))
+        {
+            $rfwUrlAry=array_unique(explode('/', $_GET['rfw']));
+            $url.="&rfw=".implode('/', $rfwUrlAry);
+        }else{
+            $url.="&rfw={$M}/{$C}";
+        }
+        $_A['query_url']=$url;
+    }else{
+        $url="?m={$M}&c={$C}&a={$A}";
+        if(isset($_GET['rfw']) && !empty($_GET['rfw']))
+        {
+            $rfwUrlAry=array_unique(explode('/', $_GET['rfw']));
+            $url.="&rfw=".implode('/', $rfwUrlAry);
+        }else{
+            $url.="&rfw={$M}/{$C}";
+        }
+        $_A['query_url']=$url;
+    }
+    if(isset($_GET['rfw']) && !empty($_GET['rfw']))
+    {
+        $rfwUrlAry=array_unique(explode('/', $_GET['rfw']));
+        if(count($rfwUrlAry)==3)
+        {
+            $_A['query_type']=$rfwUrlAry[2];
+        }elseif(count($rfwUrlAry)==2 && empty($rfwUrlAry[0]))
+        {
+            $_A['query_type']=$rfwUrlAry[1];
+        }
+    }
+    return $_A;   
+}
+
+/**
+ * 方便旧系统的重用,拉过来用,不重写了,赶进试啊
+ * @param array $var
+ * @return unknown|Ambigous <NULL, unknown>|boolean
+ */
+function post_var(array $var)
+{
+    if (is_array($var)){
+        foreach ($var as $key =>$val){
+            $_val = (isset($_POST[$val]) && $_POST[$val]!="")?$_POST[$val]:"";
+            if ($_val==""){
+                $_val=NULL;
+            }elseif (!is_array($_val) ){
+                if ($val!="content"){
+                    $_val = nl2br($_val);
+                }
+            }else{
+                $_val = join(",",$_val);
+            }
+            $result[$val] = $_val;
+        }
+        return $result;
+    }else{
+        return (!isset($_POST[$var]) || $_POST[$var]=="")?NULL:$_POST[$var];
+    }
+    return false;
+}
 ?>
