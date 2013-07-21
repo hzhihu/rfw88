@@ -3,7 +3,7 @@ return array (
   1 => 
   array (
     'siteid' => '1',
-    'name' => '默认站点',
+    'name' => '深圳',
     'dirname' => '',
     'domain' => 'http://phpcms.dev/',
     'site_title' => 'PHPCMS演示站',

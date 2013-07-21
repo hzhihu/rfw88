@@ -49,6 +49,7 @@ class index extends foreground {
 		
 		header("Cache-control: private");
 		if(isset($_POST['dosubmit'])) {
+		    
 			if($member_setting[enablcodecheck]=='1'){//开启验证码
 				if (empty($_SESSION['connectid']) && $_SESSION['code'] != strtolower($_POST['code'])) {
 					showmessage(L('code_error'));
@@ -65,7 +66,6 @@ class index extends foreground {
 			$userinfo['password'] = isset($_POST['password']) ? $_POST['password'] : exit('0');
 			
 			$userinfo['email'] = (isset($_POST['email']) && is_email($_POST['email'])) ? $_POST['email'] : exit('0');
-
 			$userinfo['modelid'] = isset($_POST['modelid']) ? intval($_POST['modelid']) : 10;
 			$userinfo['regip'] = ip();
 			$userinfo['point'] = $member_setting['defualtpoint'] ? $member_setting['defualtpoint'] : 0;
@@ -75,7 +75,7 @@ class index extends foreground {
 			$userinfo['connectid'] = isset($_SESSION['connectid']) ? $_SESSION['connectid'] : '';
 			$userinfo['from'] = isset($_SESSION['from']) ? $_SESSION['from'] : '';
 			//手机强制验证
-			
+			debug('bbb');
 			if($member_setting[mobile_checktype]=='1'){
 				//取用户手机号
 				$mobile_verify = $_POST['mobile_verify'] ? intval($_POST['mobile_verify']) : '';
@@ -234,7 +234,7 @@ class index extends foreground {
 						$member_form = new member_form($modelid);
 						$this->db->set_model($modelid);
 						$forminfos = $forminfos_arr = $member_form->get();
-
+						
 						//万能字段过滤
 						foreach($forminfos as $field=>$info) {
 							if($info['isomnipotent']) {

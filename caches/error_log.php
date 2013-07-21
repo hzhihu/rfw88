@@ -522,3 +522,81 @@
 <?php exit;?>07-20 23:41:34 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
 <?php exit;?>07-20 23:41:41 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
 <?php exit;?>07-20 23:43:36 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:50:01 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:50:07 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:50:10 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:50:11 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:50:16 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:50:18 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:50:20 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:50:28 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:50:35 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:50:38 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:50:43 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:51:32 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:51:38 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:51:39 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:51:41 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-20 23:51:43 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-21 00:00:21 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-21 10:10:45 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-21 10:10:50 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-21 10:25:12 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-21 10:26:53 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-21 12:46:02 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-21 13:23:22 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 13:24:39 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 13:24:50 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 13:57:42 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 13:58:28 | 2 | file_get_contents(http://www.phpcms.cn/upgrademd5/20130522_utf-8.php): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ | phpcms/modules/upgrade/index.php | 187
+<?php exit;?>07-21 13:58:28 | 2 | array_diff(): Argument #1 is not an array | phpcms/modules/upgrade/index.php | 190
+<?php exit;?>07-21 13:58:28 | 2 | Invalid argument supplied for foreach() | phpcms/modules/upgrade/index.php | 194
+<?php exit;?>07-21 13:58:28 | 2 | array_keys() expects parameter 1 to be array, null given | phpcms/modules/upgrade/index.php | 202
+<?php exit;?>07-21 13:58:28 | 2 | array_diff(): Argument #2 is not an array | phpcms/modules/upgrade/index.php | 202
+<?php exit;?>07-21 13:58:40 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:00:57 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:01:58 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:02:01 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:02:05 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:02:44 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:03:13 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:03:15 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:03:18 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:03:31 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:04:00 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 229
+<?php exit;?>07-21 14:05:44 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:06:03 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:06:08 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:06:28 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 14:06:40 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:27:54 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:34:46 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:35:23 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:35:53 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:36:03 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:36:05 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:39:36 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:39:39 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:40:42 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:42:02 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:42:17 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:42:22 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:42:28 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:42:37 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:42:39 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:42:40 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:43:00 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:43:00 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:43:09 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:43:49 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:43:56 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:43:58 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:44:31 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:44:45 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:45:09 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:45:14 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:46:47 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:46:54 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:49:16 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-21 20:49:52 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
