@@ -232,6 +232,7 @@ function show_protocol() {
 
 		{if $member_setting['choosemodel']}
 		<!--是否开启选择会员模型选项-->
+		{if !$modelDefault}
     	<div class="point">
             <div class="content">
 				<strong class="title">{L('notice')}</strong>
@@ -240,12 +241,20 @@ function show_protocol() {
             </div>
             <span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
         </div>
+        {/if}
 
-		<div class="input"><label>{L('member_model')}：</label>
+		<div class="input">
+		{if !$modelDefault}
+		<label>{L('member_model')}：</label>
 			{loop $modellist $k $v}
 			<label class="type"><input name="modelid" type="radio" value="{$k}" {if $k==$modelid}checked{/if} onclick="changemodel($(this).val())" />{$v['name']}</label>
 			{/loop}
+		
+		{else}
+		<input name="modelid" type="hidden" value="{$default_member_model_id}"  />
+		{/if}
 		</div>
+		
 		{/if}
 
     	<div class="input"><label>{L('username')}：</label><input type="text" id="username" name="username" size="36" class="input-text"></div>

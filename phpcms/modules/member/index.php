@@ -75,7 +75,7 @@ class index extends foreground {
 			$userinfo['connectid'] = isset($_SESSION['connectid']) ? $_SESSION['connectid'] : '';
 			$userinfo['from'] = isset($_SESSION['from']) ? $_SESSION['from'] : '';
 			//手机强制验证
-			debug('bbb');
+			
 			if($member_setting[mobile_checktype]=='1'){
 				//取用户手机号
 				$mobile_verify = $_POST['mobile_verify'] ? intval($_POST['mobile_verify']) : '';
@@ -237,7 +237,7 @@ class index extends foreground {
 						
 						//万能字段过滤
 						foreach($forminfos as $field=>$info) {
-							if($info['isomnipotent']) {
+							if($info['isomnipotent'] || !$info['viewReg']) {
 								unset($forminfos[$field]);
 							} else {
 								if($info['formtype']=='omnipotent') {
@@ -256,6 +256,18 @@ class index extends foreground {
 				}
 				$description = $modellist[$modelid]['description'];
 				
+				//是否需要默认会员模型
+				$default_member_model_id=pc_base::load_config('default_config','default_member_model_id');
+				$count_modellist=count($modellist);
+				$modelDefault=0;
+				foreach ($modellist as $k=>$v)
+				{
+				    if($k==$default_member_model_id && $count_modellist==1)
+				    {
+				        $modelDefault=1;
+				        break;
+				    }
+				}
 				include template('member', 'register');
 			}
 		}

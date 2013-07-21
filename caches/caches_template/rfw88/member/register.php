@@ -232,6 +232,7 @@ function show_protocol() {
 
 		<?php if($member_setting['choosemodel']) { ?>
 		<!--是否开启选择会员模型选项-->
+		<?php if(!$modelDefault) { ?>
     	<div class="point">
             <div class="content">
 				<strong class="title"><?php echo L('notice');?></strong>
@@ -240,12 +241,20 @@ function show_protocol() {
             </div>
             <span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
         </div>
+        <?php } ?>
 
-		<div class="input"><label><?php echo L('member_model');?>：</label>
+		<div class="input">
+		<?php if(!$modelDefault) { ?>
+		<label><?php echo L('member_model');?>：</label>
 			<?php $n=1; if(is_array($modellist)) foreach($modellist AS $k => $v) { ?>
 			<label class="type"><input name="modelid" type="radio" value="<?php echo $k;?>" <?php if($k==$modelid) { ?>checked<?php } ?> onclick="changemodel($(this).val())" /><?php echo $v['name'];?></label>
 			<?php $n++;}unset($n); ?>
+		
+		<?php } else { ?>
+		<input name="modelid" type="hidden" value="<?php echo $default_member_model_id;?>"  />
+		<?php } ?>
 		</div>
+		
 		<?php } ?>
 
     	<div class="input"><label><?php echo L('username');?>：</label><input type="text" id="username" name="username" size="36" class="input-text"></div>

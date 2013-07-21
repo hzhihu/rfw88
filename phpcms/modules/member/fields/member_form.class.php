@@ -31,7 +31,7 @@ class member_form {
 			$form = $this->$func($field, $value, $v);
 			if($form !== false) {
 				$star = $v['minlength'] || $v['pattern'] ? 1 : 0;
-				$info[$field] = array('name'=>$v['name'], 'tips'=>$v['tips'], 'form'=>$form, 'star'=>$star, 'isbase'=>$v['isbase'],'isomnipotent'=>$v['isomnipotent'],'formtype'=>$v['formtype']);
+				$info[$field] = array('name'=>$v['name'], 'tips'=>$v['tips'], 'form'=>$form, 'star'=>$star, 'isbase'=>$v['isbase'],'isomnipotent'=>$v['isomnipotent'],'formtype'=>$v['formtype'],'viewReg'=>$v['isaddReg']);
 			}
 		}
 		return $info;

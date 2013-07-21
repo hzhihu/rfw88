@@ -79,7 +79,7 @@ return array (
     'listorder' => '1',
     'disabled' => '0',
     'isomnipotent' => '0',
-    'isaddReg' => '1',
+    'isaddReg' => '0',
     'options' => '男|1
 女|0',
     'boxtype' => 'radio',
