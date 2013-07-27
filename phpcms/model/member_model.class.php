@@ -23,6 +23,44 @@ class member_model extends model {
 			$this->table_name = $this->db_tablepre.'member';
 		}
 	}
+	
+	
+	/**
+	 * 检查身份证
+	 *
+	 * @param array $data
+	 * @return array
+	 */
+	function CheckIdcard($data = array()){
+	    global $mysql;
+	    $card_id  = $data['card_id'];
+	    $_sql = "card_id  = '{$card_id}'";
+	    if (isset($data['user_id']) && $data['user_id']!=""){
+	        $_sql .= " and userid!= {$data['user_id']}";
+	    }
+	    $result = $this->get_one($_sql);
+	    if ($result == false) return false;
+	    return true;
+	}
+	
+	
+	/**
+	 * 修改用户的各种信息
+	 *
+	 * @param Array $data
+	 * @return Boolen
+	 */
+	function UpdateUserAll($data = array()){
+	    if(!isset($data['user_id']) || empty($data['user_id']))
+	    {
+	        return false;
+	    }
+	    $user_id = $data['user_id'];
+	    unset($data['user_id']);
+	    if ($user_id == "" )	return false;
+	    $where .= " `userid` = {$user_id}";
+	    return $this->update($data,$where);
+	}
 
 
 }

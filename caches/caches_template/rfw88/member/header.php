@@ -6,6 +6,7 @@
 <title>phpcmsV9 - <?php echo L('member','','member').L('manage_center');?></title>
 <link href="<?php echo CSS_PATH;?>reset.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo CSS_PATH;?>member.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo CSS_PATH;?>user_info.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo CSS_PATH;?>table_form.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?php echo JS_PATH;?>jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo JS_PATH;?>member_common.js"></script>

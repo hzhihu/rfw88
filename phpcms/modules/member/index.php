@@ -207,7 +207,8 @@ class index extends foreground {
 				$userid = isset($code_arr[0]) ? $code_arr[0] : '';
 				$userid = is_numeric($userid) ? $userid : showmessage(L('operation_failure'), 'index.php?m=member&c=index');
 
-				$this->db->update(array('groupid'=>$this->_get_usergroup_bypoint()), array('userid'=>$userid));
+				
+				$this->db->update(array('groupid'=>$this->_get_usergroup_bypoint(),'email_status'=>1), array('userid'=>$userid));
 				showmessage(L('operation_success'), 'index.php?m=member&c=index');
 			} elseif(!empty($_GET['protocol'])) {
 

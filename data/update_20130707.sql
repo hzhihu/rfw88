@@ -75,10 +75,23 @@ CREATE TABLE IF NOT EXISTS `v9_attestation_type` (
 
 
 
---增加认证字段
+-- 增加认证字段
 ALTER TABLE `v9_member`ADD  `avatar_status` int(2) DEFAULT '0' COMMENT '实名认证' AFTER `vip`;
 ALTER TABLE `v9_member`ADD  `email_status` varchar(50) DEFAULT 0 COMMENT '邮箱认证' AFTER `avatar_status`;
-ALTER TABLE `v9_member`ADD  `phone_status` varchar(50) DEFAULT '0' COMMENT '头像认证' AFTER `email_status`;
+ALTER TABLE `v9_member`ADD  `phone_status` varchar(50) DEFAULT '0' COMMENT '手机认证' AFTER `email_status`;
+ALTER TABLE `v9_member`ADD  `phone` varchar(50) DEFAULT NULL COMMENT '手机' AFTER `phone_status`;
+ALTER TABLE `v9_member`ADD  `card_type` varchar(10) DEFAULT NULL COMMENT '实名认证证件类型,1为身份证,2为军官证,3为台胞证' AFTER `phone_status`;
+ALTER TABLE `v9_member`ADD  `card_id` varchar(50) DEFAULT NULL COMMENT '证件号码' AFTER `card_type`;
+ALTER TABLE `v9_member`ADD  `card_pic1` varchar(150) DEFAULT NULL COMMENT '身份证正面上传' AFTER `card_id`;
+ALTER TABLE `v9_member`ADD  `card_pic2` varchar(150) DEFAULT NULL COMMENT '身份证背面上传' AFTER `card_pic1`;
+ALTER TABLE `v9_member`ADD  `nation` varchar(10) DEFAULT NULL COMMENT '民 族' AFTER `card_pic2`;
+ALTER TABLE `v9_member`ADD  `realname` varchar(20) DEFAULT '' COMMENT '真实姓名' AFTER `nation`;
+ALTER TABLE `v9_member`ADD  `sex` varchar(10) DEFAULT NULL COMMENT '性 别' AFTER `realname`;
+ALTER TABLE `v9_member`ADD  `birthday` varchar(11) DEFAULT NULL COMMENT '出生日期' AFTER `sex`;
+ALTER TABLE `v9_member`ADD  `province` varchar(20) DEFAULT NULL COMMENT '籍贯省' AFTER `birthday`;
+ALTER TABLE `v9_member`ADD  `city` varchar(20) DEFAULT NULL COMMENT '籍贯城市' AFTER `province`;
+ALTER TABLE `v9_member`ADD  `area` varchar(20) DEFAULT NULL COMMENT '籍贯区域' AFTER `city`;
+ALTER TABLE `v9_member`ADD  `real_status` varchar(2) DEFAULT NULL COMMENT '认证的状态' AFTER `area`;
 
 
 
@@ -95,3 +108,59 @@ CREATE TABLE IF NOT EXISTS `v9_area` (
     KEY `pid` (`pid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='地区表';
 
+
+
+-- 常用信息表
+DROP TABLE IF EXISTS `v9_linkage`;
+CREATE TABLE `v9_linkage` (
+  `id` smallint(5) unsigned NOT NULL AUTO_INCREMENT,
+  `status` smallint(2) unsigned DEFAULT '0' COMMENT '状态',
+  `order` smallint(6) DEFAULT '0' COMMENT '排序',
+  `type_id` smallint(5) unsigned DEFAULT '0' COMMENT '类型',
+  `pid` varchar(30) DEFAULT NULL COMMENT '所属联动',
+  `name` varchar(250) DEFAULT NULL COMMENT '联动名称',
+  `value` varchar(250) DEFAULT NULL COMMENT '联动的值',
+  `addtime` int(10) DEFAULT '0',
+  `addip` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `type_id` (`type_id`),
+  KEY `type_ida` (`type_id`,`value`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='常用信息表';
+
+
+DROP TABLE IF EXISTS `v9_linkage_type`;
+CREATE TABLE `v9_linkage_type` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `order` smallint(6) DEFAULT '0',
+  `name` varchar(50) DEFAULT NULL,
+  `nid` varchar(50) DEFAULT NULL,
+  `addtime` int(10) DEFAULT '0',
+  `addip` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `nid` (`nid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='常用信息分类表';
+
+
+
+
+DROP TABLE IF EXISTS `v9_upfiles`;
+CREATE TABLE `v9_upfiles` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) DEFAULT NULL COMMENT '名称',
+  `code` varchar(50) DEFAULT NULL COMMENT '模块',
+  `aid` varchar(50) DEFAULT NULL COMMENT '所属模块id',
+  `status` int(2) DEFAULT '0' COMMENT '状态',
+  `user_id` int(11) NOT NULL DEFAULT '0',
+  `filetype` varchar(50) DEFAULT NULL COMMENT '文件类型',
+  `filename` varchar(100) DEFAULT NULL COMMENT '文件名称',
+  `filesize` int(10) DEFAULT '0' COMMENT '文件大小',
+  `fileurl` varchar(200) DEFAULT NULL COMMENT '文件地址',
+  `if_cover` int(2) DEFAULT '0' COMMENT '是否封面',
+  `order` int(10) DEFAULT '0' COMMENT '排序',
+  `hits` int(11) DEFAULT '0' COMMENT '点击次数',
+  `addtime` varchar(30) DEFAULT NULL COMMENT '添加时间',
+  `addip` varchar(30) DEFAULT NULL COMMENT '添加ip',
+  `updatetime` varchar(30) DEFAULT NULL COMMENT '修改时间',
+  `updateip` varchar(30) DEFAULT NULL COMMENT '修改ip',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='上传文件表';

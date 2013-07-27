@@ -48,6 +48,7 @@ class admin {
 		}
 		if ($data = $this->db->get_one(array('username'=>$username))) {
 			$password = md5(md5($password).$data['encrypt']);
+			//var_dump($password);exit();
 			if ($password != $data['password']) {
 				$this->err_code = 2;
 				return false;

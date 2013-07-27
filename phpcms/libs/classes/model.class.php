@@ -242,6 +242,32 @@ class model {
 		return $this->db->version();
 	}
 	
+	public function db_fetch_array($sql)
+	{
+	    $sql=str_replace(array('{','}'), array('phpcms_',''), $sql);
+	    $this->query($sql);
+	    $data = $this->db->fetch_next();
+	    return $data;
+	}
+	
+	public function db_fetch_arrays($sql)
+	{
+	    $sql=str_replace(array('{','}'), array('phpcms_',''), $sql);
+	    $this->query($sql);
+	    return $this->fetch_array();
+	}
+	
+	public function db_query($sql)
+	{
+	    $sql=str_replace(array('{','}'), array('phpcms_',''), $sql);
+	    return $this->query($sql);
+	}
+	
+	public function db_insert_id()
+	{
+	    return $this->insert_id();
+	}
+	
 	public function db ()
 	{
 	    return $this->db;

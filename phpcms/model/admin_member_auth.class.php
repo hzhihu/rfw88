@@ -99,5 +99,10 @@ class admin_member_auth extends model
                 'pages_htmls'=>$pages 
         );
     }
+    
+    public function rellayData($memberInfo)
+    {
+        $sql="SELECT avatar_status,email_status,phone_status FROM `{$this->getTable('member')}` as u WHERE ";
+    }
 }
 ?>

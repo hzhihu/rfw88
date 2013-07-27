@@ -1,0 +1,109 @@
+/*右边信息*/
+
+.user_right_title { text-align:left;padding:0 5px 0 5px; border-bottom:1px solid #CCCCCC; line-height:28px;  background:url(../images/main_menu_bg.gif); color:#FFFFFF}
+
+.user_right_title a{color:#FFFFFF}
+
+.user_right_border { line-height:25px; height:auto; width:100%; text-align:left; font-size:13px; overflow:hidden }
+
+.user_right_border .l {  float:left; width:120px;padding:4px 5px 0 0px; text-align:right }
+
+.user_right_border .linvest {  float:left; width:180px;padding:4px 5px 0 0px; text-align:right }
+
+.user_right_border .d {  float:left; width:320px;padding:4px 5px 0 0px; text-align:right }
+
+.user_right_border .e {  float:left; width:220px;padding:4px 5px 0 0px; text-align:right }
+
+.user_right_border .c {  padding:4px 5px 3px 10px; float:left; }
+
+.user_right_border .r {  padding:4px 5px 3px 10px; float:left; width:240px }
+
+.user_right_border .rb {  padding:4px 5px 3px 10px; float:left; width:180px }
+
+.user_right_border b { color:#FF0000; font-weight:normal; margin-left:5px;}
+
+.user_right_submit { text-align:center; margin-top:6px; height:30px;}
+
+
+
+.user_right_info {
+
+    border:1px solid #D9D9D9;
+
+    background-color: #EEEEEE;
+
+    padding:10px;
+
+    padding-top:0;
+
+}
+
+.user_right_info .title {
+
+    border-bottom:1px solid #CCCCCC;
+
+    line-height:34px;
+
+    font-size: 14px;
+
+    color: #900;
+
+}
+
+.user_right_info li { line-height:30px; border-bottom:1px dashed #CCCCCC;}
+
+.user_right_info li span { float:right} 
+
+
+
+.user_right_li{ margin-top:10px; border:1px solid  #EBEBEB; overflow:hidden}
+
+.user_right_li .title{
+
+    margin:1px;
+
+    background-color: #F0F0F0;
+
+    line-height:26px;
+
+    padding-left:10px;
+
+    font-weight:bold;
+
+    color: #900;
+
+    font-size: 14px;
+
+}
+
+.user_right_li .content{ margin:10px; margin-top:0}
+
+.user_right_li li{ line-height:28px; border-bottom:1px dashed #CCCCCC; width:auto; overflow:hidden}
+
+.user_right_li span { float:left; text-align:left}
+
+.user_right_li font{ font-size:13px; color:#FF0000}
+
+
+
+/*用户中心列表*/
+
+.user_button { width:210px; margin-bottom:10px; line-height:20px; color:#666666; }
+
+.user_button_r { width:169px; margin-bottom:10px; line-height:20px; color:#666666; }
+
+.user_button_r span { padding-top:10px; margin-left:5px; }
+
+.user_button_r strong { font-size:14px;}
+
+
+/*帮助*/
+
+.user_help{ border:1px solid #FFCF88; background-color:#FFFDEC; padding:5px 10px 5px 10px; margin:10px; text-align:left; font-size:12px; line-height:24px;}
+
+.user_right_foot { border-top:1px dashed #CCCCCC; padding-top:5px; margin:10px; text-align:left; line-height:25px;}
+
+.user_main_title { border-bottom:1px solid #FFD675; background-color:#FFF4DB; line-height:30px; margin:10px; text-align:left; font-size:13px; padding-left:10px; font-weight:bold}
+
+.user_main_title1 { border-bottom:1px solid #FFD675; background-color:#FFF4DB;  margin-top:10px; text-align:left; font-size:13px; padding-left:10px; font-weight:bold;  height:28px; padding-top:7px;}
+

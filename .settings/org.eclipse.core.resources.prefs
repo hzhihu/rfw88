@@ -1,5 +1,8 @@
 eclipse.preferences.version=1
 encoding//phpcms/libs/classes/magic.class.php=UTF-8
 encoding//phpcms/libs/classes/pages.class.php=UTF-8
+encoding//phpcms/libs/classes/upload.class.php=UTF-8
+encoding//phpcms/templates/rfw88/member/safety_manage_password.html=UTF-8
 encoding//statics/css/admin_rfw.css=UTF-8
+encoding//statics/css/user_info.css=UTF-8
 encoding/<project>=UTF-8

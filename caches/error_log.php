@@ -637,3 +637,175 @@
 <?php exit;?>07-21 23:30:29 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
 <?php exit;?>07-21 23:30:45 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
 <?php exit;?>07-21 23:30:56 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-24 15:23:12 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-24 21:31:55 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 228
+<?php exit;?>07-27 16:45:00 | 2 | Missing argument 2 for mysql::get_one(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/model/member_model.class.php on line 41 and defined | phpcms/libs/classes/mysql.class.php | 173
+<?php exit;?>07-27 17:24:01 | 2 | move_uploaded_file(ROOT_PATHuploadfile/upfiles/images/2013-07/27/0_user_13749170410.jpg): failed to open stream: No such file or directory | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 17:24:01 | 2 | move_uploaded_file(): Unable to move '/private/var/tmp/phpyf8wjX' to 'ROOT_PATHuploadfile/upfiles/images/2013-07/27/0_user_13749170410.jpg' | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 17:24:01 | 2 | imagecreatetruecolor(): Invalid image dimensions | phpcms/libs/classes/upload.class.php | 820
+<?php exit;?>07-27 17:24:01 | 2 | imagecolorallocate() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 821
+<?php exit;?>07-27 17:24:01 | 2 | imagefilledrectangle() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 822
+<?php exit;?>07-27 17:24:01 | 2 | imagecopyresampled() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 829
+<?php exit;?>07-27 17:24:01 | 2 | imagejpeg() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 429
+<?php exit;?>07-27 17:24:55 | 2 | move_uploaded_file(ROOT_PATHuploadfile/upfiles/images/2013-07/27/0_user_13749170951.jpg): failed to open stream: No such file or directory | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 17:24:55 | 2 | move_uploaded_file(): Unable to move '/private/var/tmp/phpCSTlfb' to 'ROOT_PATHuploadfile/upfiles/images/2013-07/27/0_user_13749170951.jpg' | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 17:24:55 | 2 | imagecreatetruecolor(): Invalid image dimensions | phpcms/libs/classes/upload.class.php | 820
+<?php exit;?>07-27 17:24:55 | 2 | imagecolorallocate() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 821
+<?php exit;?>07-27 17:24:55 | 2 | imagefilledrectangle() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 822
+<?php exit;?>07-27 17:24:55 | 2 | imagecopyresampled() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 829
+<?php exit;?>07-27 17:24:55 | 2 | imagejpeg() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 429
+<?php exit;?>07-27 21:45:01 | 2 | move_uploaded_file(ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749327018.jpg): failed to open stream: No such file or directory | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:45:01 | 2 | move_uploaded_file(): Unable to move '/private/var/tmp/phpQiNfYu' to 'ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749327018.jpg' | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:45:01 | 2 | imagecreatetruecolor(): Invalid image dimensions | phpcms/libs/classes/upload.class.php | 820
+<?php exit;?>07-27 21:45:01 | 2 | imagecolorallocate() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 821
+<?php exit;?>07-27 21:45:01 | 2 | imagefilledrectangle() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 822
+<?php exit;?>07-27 21:45:01 | 2 | imagecopyresampled() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 829
+<?php exit;?>07-27 21:45:01 | 2 | imagejpeg() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 429
+<?php exit;?>07-27 21:46:31 | 2 | move_uploaded_file(ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749327914.jpg): failed to open stream: No such file or directory | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:46:31 | 2 | move_uploaded_file(): Unable to move '/private/var/tmp/phpX8qPZk' to 'ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749327914.jpg' | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:46:31 | 2 | imagecreatetruecolor(): Invalid image dimensions | phpcms/libs/classes/upload.class.php | 820
+<?php exit;?>07-27 21:46:31 | 2 | imagecolorallocate() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 821
+<?php exit;?>07-27 21:46:31 | 2 | imagefilledrectangle() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 822
+<?php exit;?>07-27 21:46:31 | 2 | imagecopyresampled() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 829
+<?php exit;?>07-27 21:46:31 | 2 | imagejpeg() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 429
+<?php exit;?>07-27 21:47:01 | 2 | move_uploaded_file(ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749328213.jpg): failed to open stream: No such file or directory | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:47:01 | 2 | move_uploaded_file(): Unable to move '/private/var/tmp/phpW06QNm' to 'ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749328213.jpg' | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:47:01 | 2 | imagecreatetruecolor(): Invalid image dimensions | phpcms/libs/classes/upload.class.php | 820
+<?php exit;?>07-27 21:47:01 | 2 | imagecolorallocate() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 821
+<?php exit;?>07-27 21:47:01 | 2 | imagefilledrectangle() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 822
+<?php exit;?>07-27 21:47:01 | 2 | imagecopyresampled() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 829
+<?php exit;?>07-27 21:47:01 | 2 | imagejpeg() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 429
+<?php exit;?>07-27 21:47:01 | 2 | move_uploaded_file(ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749328212.jpg): failed to open stream: No such file or directory | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:47:01 | 2 | move_uploaded_file(): Unable to move '/private/var/tmp/phpvCVziG' to 'ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749328212.jpg' | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:47:01 | 2 | imagecreatetruecolor(): Invalid image dimensions | phpcms/libs/classes/upload.class.php | 820
+<?php exit;?>07-27 21:47:01 | 2 | imagecolorallocate() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 821
+<?php exit;?>07-27 21:47:01 | 2 | imagefilledrectangle() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 822
+<?php exit;?>07-27 21:47:01 | 2 | imagecopyresampled() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 829
+<?php exit;?>07-27 21:47:01 | 2 | imagejpeg() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 429
+<?php exit;?>07-27 21:53:27 | 2 | move_uploaded_file(ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749332079.jpg): failed to open stream: No such file or directory | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:53:27 | 2 | move_uploaded_file(): Unable to move '/private/var/tmp/phpkn2VXt' to 'ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749332079.jpg' | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:53:27 | 2 | imagecreatetruecolor(): Invalid image dimensions | phpcms/libs/classes/upload.class.php | 820
+<?php exit;?>07-27 21:53:27 | 2 | imagecolorallocate() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 821
+<?php exit;?>07-27 21:53:27 | 2 | imagefilledrectangle() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 822
+<?php exit;?>07-27 21:53:27 | 2 | imagecopyresampled() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 829
+<?php exit;?>07-27 21:53:27 | 2 | imagejpeg() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 429
+<?php exit;?>07-27 21:53:54 | 2 | move_uploaded_file(ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749332341.jpg): failed to open stream: No such file or directory | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:53:54 | 2 | move_uploaded_file(): Unable to move '/private/var/tmp/phpqp34FE' to 'ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749332341.jpg' | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:53:54 | 2 | imagecreatetruecolor(): Invalid image dimensions | phpcms/libs/classes/upload.class.php | 821
+<?php exit;?>07-27 21:53:54 | 2 | imagecolorallocate() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 822
+<?php exit;?>07-27 21:53:54 | 2 | imagefilledrectangle() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 823
+<?php exit;?>07-27 21:53:54 | 2 | imagecopyresampled() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 830
+<?php exit;?>07-27 21:53:54 | 2 | imagejpeg() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 430
+<?php exit;?>07-27 21:54:15 | 2 | move_uploaded_file(ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749332556.jpg): failed to open stream: No such file or directory | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:54:15 | 2 | move_uploaded_file(): Unable to move '/private/var/tmp/phpgCt4VF' to 'ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749332556.jpg' | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:54:15 | 2 | imagecreatetruecolor(): Invalid image dimensions | phpcms/libs/classes/upload.class.php | 821
+<?php exit;?>07-27 21:54:15 | 2 | imagecolorallocate() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 822
+<?php exit;?>07-27 21:54:15 | 2 | imagefilledrectangle() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 823
+<?php exit;?>07-27 21:54:15 | 2 | imagecopyresampled() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 830
+<?php exit;?>07-27 21:54:15 | 2 | imagejpeg() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 430
+<?php exit;?>07-27 21:54:45 | 2 | move_uploaded_file(ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749332858.jpg): failed to open stream: No such file or directory | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:54:45 | 2 | move_uploaded_file(): Unable to move '/private/var/tmp/phpWQSkHN' to 'ROOT_PATHuploadfile/upfiles/images/2013-07/27/3_user_13749332858.jpg' | phpcms/libs/classes/upload.class.php | 197
+<?php exit;?>07-27 21:54:45 | 2 | imagecreatetruecolor(): Invalid image dimensions | phpcms/libs/classes/upload.class.php | 821
+<?php exit;?>07-27 21:54:45 | 2 | imagecolorallocate() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 822
+<?php exit;?>07-27 21:54:45 | 2 | imagefilledrectangle() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 823
+<?php exit;?>07-27 21:54:45 | 2 | imagecopyresampled() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 830
+<?php exit;?>07-27 21:54:45 | 2 | imagejpeg() expects parameter 1 to be resource, boolean given | phpcms/libs/classes/upload.class.php | 430
+<?php exit;?>07-27 22:00:00 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 706
+<?php exit;?>07-27 22:00:20 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 706
+<?php exit;?>07-27 22:05:17 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 705
+<?php exit;?>07-27 22:05:17 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 430
+<?php exit;?>07-27 22:06:48 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 706
+<?php exit;?>07-27 22:06:48 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 431
+<?php exit;?>07-27 22:07:53 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 706
+<?php exit;?>07-27 22:07:53 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 431
+<?php exit;?>07-27 22:08:24 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 707
+<?php exit;?>07-27 22:08:24 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 432
+<?php exit;?>07-27 22:09:09 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 707
+<?php exit;?>07-27 22:09:09 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 432
+<?php exit;?>07-27 22:09:09 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 707
+<?php exit;?>07-27 22:09:09 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 432
+<?php exit;?>07-27 22:09:56 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 708
+<?php exit;?>07-27 22:10:14 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:11:22 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:11:49 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:13:04 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:13:20 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:14:39 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:14:48 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:15:25 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:15:43 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 710
+<?php exit;?>07-27 22:18:28 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:18:59 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:19:10 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:19:36 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 710
+<?php exit;?>07-27 22:19:46 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 710
+<?php exit;?>07-27 22:20:01 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 710
+<?php exit;?>07-27 22:21:26 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:21:26 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 434
+<?php exit;?>07-27 22:25:55 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:25:55 | 2 | Missing argument 3 for watermark(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/libs/classes/upload.class.php on line 208 and defined | phpcms/libs/functions/global.func.php | 1742
+<?php exit;?>07-27 22:25:55 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 434
+<?php exit;?>07-27 22:25:55 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:25:55 | 2 | Missing argument 3 for watermark(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/libs/classes/upload.class.php on line 208 and defined | phpcms/libs/functions/global.func.php | 1742
+<?php exit;?>07-27 22:25:55 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 434
+<?php exit;?>07-27 22:26:33 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:26:33 | 2 | Missing argument 3 for watermark(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/libs/classes/upload.class.php on line 208 and defined | phpcms/libs/functions/global.func.php | 1742
+<?php exit;?>07-27 22:26:33 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 434
+<?php exit;?>07-27 22:27:25 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:27:25 | 2 | Missing argument 3 for watermark(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/libs/classes/upload.class.php on line 208 and defined | phpcms/libs/functions/global.func.php | 1742
+<?php exit;?>07-27 22:27:25 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 434
+<?php exit;?>07-27 22:28:52 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 710
+<?php exit;?>07-27 22:28:52 | 2 | Missing argument 3 for watermark(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/libs/classes/upload.class.php on line 208 and defined | phpcms/libs/functions/global.func.php | 1742
+<?php exit;?>07-27 22:29:11 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:29:46 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:29:57 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 710
+<?php exit;?>07-27 22:29:57 | 2 | Missing argument 3 for watermark(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/libs/classes/upload.class.php on line 208 and defined | phpcms/libs/functions/global.func.php | 1742
+<?php exit;?>07-27 22:30:56 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:30:56 | 2 | Missing argument 3 for watermark(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/libs/classes/upload.class.php on line 208 and defined | phpcms/libs/functions/global.func.php | 1742
+<?php exit;?>07-27 22:30:56 | 2 | imagepng() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 434
+<?php exit;?>07-27 22:31:40 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:31:40 | 2 | Missing argument 3 for watermark(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/libs/classes/upload.class.php on line 208 and defined | phpcms/libs/functions/global.func.php | 1742
+<?php exit;?>07-27 22:31:40 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 434
+<?php exit;?>07-27 22:31:46 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:31:46 | 2 | Missing argument 3 for watermark(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/libs/classes/upload.class.php on line 208 and defined | phpcms/libs/functions/global.func.php | 1742
+<?php exit;?>07-27 22:31:46 | 2 | imagepng() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 434
+<?php exit;?>07-27 22:32:26 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:32:26 | 2 | Missing argument 3 for watermark(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/libs/classes/upload.class.php on line 208 and defined | phpcms/libs/functions/global.func.php | 1742
+<?php exit;?>07-27 22:33:02 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 709
+<?php exit;?>07-27 22:33:02 | 2 | Missing argument 3 for watermark(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/libs/classes/upload.class.php on line 208 and defined | phpcms/libs/functions/global.func.php | 1742
+<?php exit;?>07-27 22:40:48 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 712
+<?php exit;?>07-27 22:41:11 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:41:19 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:41:19 | 2 | imagepng() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 22:41:36 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:41:36 | 2 | imagepng() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 22:42:21 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:42:52 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:42:52 | 2 | imagepng() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 22:42:59 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:42:59 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 22:43:46 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:43:46 | 2 | imagepng() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 22:44:36 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:44:51 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:45:01 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:45:45 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:46:21 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:46:30 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:46:30 | 2 | imagepng() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 22:46:47 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:46:47 | 2 | imagepng() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 22:47:13 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:48:16 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:48:16 | 2 | imagepng() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 22:48:43 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:48:43 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 22:48:54 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:48:54 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 22:49:14 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:49:14 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 22:50:47 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:50:47 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 22:50:47 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
+<?php exit;?>07-27 22:50:47 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
+<?php exit;?>07-27 23:40:16 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 229

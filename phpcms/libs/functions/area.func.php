@@ -1,18 +1,19 @@
 <?php
 
 $order = " order by `order` desc,id asc ";
+$mysql=pc_base::load_model('area_model');
 if (isset($_GET['area_id'])){
 	$city = $_GET["area_id"];
 	$sql = "select * from {area} where pid=".$city.$order;
 	$result = $mysql->db_fetch_arrays($sql);
 	$category['id'] = "";
-	$category['name'] = gbk2utf8("请选择");
+	$category['name'] = "请选择";
 	$categorys[0] = $category;
 	if ($result!=false){
 		foreach ($result as $key => $row){
 			$category = array();
 			$category['id'] = $row['id'];
-			$category['name'] = gbk2utf8($row['name']);
+			$category['name'] = $row['name'];
 			$categorys[$key+1] = $category;
 		}
 	}
@@ -29,7 +30,6 @@ $_REQUEST['area'] = $_REQUEST['value'];
 $name = isset($_REQUEST['name'])?$_REQUEST['name']:"";
 
 $type = !isset($_REQUEST['type'])?"":$_REQUEST['type'];
-
 if($type!=""){
 	$_type = explode(",",$type);
 }else{
@@ -101,9 +101,9 @@ $(document).ready(function (){
 		var province = $(this).val();
 		var count = 0;
 		$.ajax({
-			url:"/plugins/index.php",
+			url:"index.php?m=htmls&c=index&a=area",
 			dataType:'json', 
-			data:"q=area&area_id="+province,
+			data:"area_id="+province,
 			success:function(json){
 				$("#<? echo $name;?>city option").each(function(){
 					$(this).remove();				 
@@ -120,9 +120,9 @@ $(document).ready(function (){
 		var province = $(this).val();
 		var count = 0;
 		$.ajax({
-			url:"/plugins/index.php",
+			url:"index.php?m=htmls&c=index&a=area",
 			dataType:'json', 
-			data:"q=area&area_id="+province,
+			data:"area_id="+province,
 			success:function(json){
 				$("#<? echo $name;?>area option").each(function(){
 					$(this).remove();				 
