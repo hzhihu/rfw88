@@ -11,4 +11,5 @@ $LANG['member_loan'] = '我是借款者';
 $LANG['fund_manage'] = '资金管理';
 $LANG['auth_center'] = '认证中心';
 $LANG['safety_center'] = '安全中心';
+$LANG['member'] = '资金管理';
 ?>

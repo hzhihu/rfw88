@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=7" />
-<title>phpcmsV9 - <?php echo L('member','','member').L('manage_center');?></title>
+<title><?php echo L('member','','member').L('manage_center');?></title>
 <link href="<?php echo CSS_PATH;?>reset.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo CSS_PATH;?>member.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo CSS_PATH;?>user_info.css" rel="stylesheet" type="text/css" />

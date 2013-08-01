@@ -2365,6 +2365,48 @@ function rfwFastTpl($template,array $assign,array $otherConfig)
 
 
 /**
+ * 快速取得模板的目录
+ * @param string $module 模型
+ * @param string $style 风格
+ * @return string
+ */
+function rfwTplPath($module = 'content', $style = '')
+{
+    $module = str_replace('/', DIRECTORY_SEPARATOR, $module);
+    if (! empty($style) && preg_match('/([a-z0-9\-_]+)/is', $style)) {
+    } elseif (empty($style) && ! defined('STYLE')) {
+        if (defined('SITEID')) {
+            $siteid = SITEID;
+        } else {
+            $siteid = param::get_cookie('siteid');
+        }
+        if (! $siteid)
+            $siteid = 1;
+        $sitelist = getcache('sitelist', 'commons');
+        if (! empty($siteid)) {
+            $style = $sitelist [$siteid] ['default_style'];
+        }
+    } elseif (empty($style) && defined('STYLE')) {
+        $style = STYLE;
+    } else {
+        $style = 'default';
+    }
+    if (! $style)
+        $style = 'default';
+    
+    $dir='';
+    if (is_dir(PC_PATH . 'templates' . DIRECTORY_SEPARATOR . $style . DIRECTORY_SEPARATOR . $module . DIRECTORY_SEPARATOR)) {
+        $dir=PC_PATH . 'templates' . DIRECTORY_SEPARATOR . $style . DIRECTORY_SEPARATOR . $module . DIRECTORY_SEPARATOR ;
+    } else {
+        if (is_dir(PC_PATH . 'templates' . DIRECTORY_SEPARATOR . 'default' . DIRECTORY_SEPARATOR . $module . DIRECTORY_SEPARATOR)) {
+            $dir=PC_PATH . 'templates' . DIRECTORY_SEPARATOR . 'default' . DIRECTORY_SEPARATOR . $module . DIRECTORY_SEPARATOR;
+        }
+    }
+    return $dir;
+    
+}
+
+/**
  * 
  * 对旧系统的URL进行重新组装
  */
@@ -2535,5 +2577,13 @@ function ip_address() {
         $ip_address = '';
     }
     return $ip_address;
+}
+
+function linkage($id)
+{
+    $linkage_model=pc_base::load_model('linkage_model');
+    $sql="SELECT name,value FROM {linkage} where id={$id}";
+    $result= $linkage_model->db_fetch_array($sql);
+    return $result['name'];
 }
 ?>

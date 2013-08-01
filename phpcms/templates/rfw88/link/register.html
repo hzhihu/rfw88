@@ -108,7 +108,7 @@
 	$(function(){
 	$.formValidator.initConfig({autotip:true,formid:"myform",onerror:function(msg){}});
 	$("#name").formValidator({onshow:"请输入网站名称",onfocus:"请输入网站名称"}).inputValidator({min:1,max:999,onerror:"网站名称不能为空"});
- 	$("#url").formValidator({onshow:"请输入网站网址",onfocus:"请输入网站网址"}).inputValidator({min:1,onerror:"请输入网站网址"}).regexValidator({regexp:"^http:\/\/[A-Za-z0-9]+\.[A-Za-z0-9]+[\/=\?%\-&]*([^<>])*$",onerror:"格式应该为http://www.phpcms.cn/"})
+ 	$("#url").formValidator({onshow:"请输入网站网址",onfocus:"请输入网站网址"}).inputValidator({min:1,onerror:"请输入网站网址"}).regexValidator({regexp:"^http:\/\/[A-Za-z0-9]+\.[A-Za-z0-9]+[\/=\?%\-&]*([^<>])*$",onerror:"格式应该为http://www.baidu.cn/"})
  	$("#code").formValidator({onshow:"请输入验证码",onfocus:"验证码不能为空"}).inputValidator({min:1,max:999,onerror:"验证码不能为空"}).ajaxValidator({
 	    type : "get",
 		url : "",

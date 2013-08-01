@@ -97,6 +97,33 @@
 .user_button_r strong { font-size:14px;}
 
 
+/*列表表格样式*/
+
+.user_list_table{width: 100%; overflow:hidden;border-collapse:collapse; }
+
+.user_list_table tr { height:22px; font-size:12px;}
+
+.user_list_table td {margin:0px;padding:3px;text-align: center;color:#575757;background: url(../images/point.gif) repeat-x;height:30px; *height:20px; }
+
+.user_list_table td a{color: #333;}
+
+.user_list_table td a:hover{text-decoration: none;color: #F60;}
+
+.user_list_table .head td{background-color: #F3F3F3;border-bottom:1px solid #CCCCCC;border-right:1px solid  #FFFFFF;border-top:1px solid  #FFFFFF; font-weight:bold; height:30px; *height:20px;}
+
+.user_list_table .tr1 td{background-color: #F7F7F7;height:30px; *height:20px;border-right:1px solid  #FFFFFF;}
+
+.user_list_table .no_bg td{background:none;}
+
+.user_list_table td.left{text-align: left;}
+
+.user_list_table .page{ border-top:1px dashed #CCCCCC}
+
+
+
+
+
+
 /*帮助*/
 
 .user_help{ border:1px solid #FFCF88; background-color:#FFFDEC; padding:5px 10px 5px 10px; margin:10px; text-align:left; font-size:12px; line-height:24px;}

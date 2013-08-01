@@ -1,6 +1,6 @@
 <?php
 return array (
-  'admin_email' => 'phpcms@phpcms.cn',
+  'admin_email' => 'hzhihu@gmail.com',
   'maxloginfailedtimes' => '8',
   'minrefreshtime' => '2',
   'mail_type' => '1',

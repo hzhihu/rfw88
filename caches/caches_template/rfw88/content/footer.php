@@ -7,7 +7,7 @@
 <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 <a href="<?php echo APP_PATH;?>index.php?m=link" target="_blank">友情链接</a>
 <br />
-Powered by <strong><a href="http://www.phpcms.cn" target="_blank">PHPCMS</a></strong> <em><?php echo get_pc_version(1);?></em> &copy; 2011 <img src="<?php echo IMG_PATH;?>copyright.gif"/><?php echo tjcode();?><?php echo runhook('glogal_footer')?>
+Powered by <strong><a href="http://www.hzhihu.cn" target="_blank">HZHIHU</a></strong> <em><?php echo get_pc_version(1);?></em> &copy; 2011 <img src="<?php echo IMG_PATH;?>copyright.gif"/><?php echo tjcode();?><?php echo runhook('glogal_footer')?>
 </p>
 </div>
 <script type="text/javascript">

@@ -10,6 +10,7 @@ defined('IN_PHPCMS') or exit('Access Denied');
 pc_base::load_sys_class('db_factory', '', 0);
 class model {
 	
+    const ERROR = '操作失败，请稍后重试';
 	//数据库配置
 	protected $db_config = '';
 	//数据库连接

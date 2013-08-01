@@ -1,6 +1,6 @@
 <?php
 /*Language Format:
-Add a new file(.lang.php) with your module name at /phpcms/languages/
+Add a new file(.lang.php) with your module name at /rfw88/languages/
 translation save at the array:$LANG
 */
 $LANG['member_manage'] = '管理会员';
@@ -551,4 +551,5 @@ $LANG['member_real_auth'] = '实名认证';
 $LANG['member_auth_info'] = '用户认证信息';
 $LANG['member_auth_data'] = '客户证明材料';
 $LANG['area'] = '地区模块';
+$LANG['content'] = '内容';
 ?>

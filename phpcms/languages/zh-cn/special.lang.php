@@ -1,7 +1,7 @@
 <?php
 
 /*Language Format:
-Add a new file(.lang.php) with your module name at /phpcms/languages/
+Add a new file(.lang.php) with your module name at /rfw88/languages/
 translation save at the array:$LANG
 */
 $LANG['special']							=	'专题';

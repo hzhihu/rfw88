@@ -40,4 +40,14 @@ class index{
     {
         pc_base::load_sys_func('area');
     }
+    
+    /**
+     * 银行
+     */
+    public function bank()
+    {
+        $_REQUEST['nid']='account_bank';
+        $_REQUEST['name']='bank';
+        pc_base::load_sys_func('linkage');
+    }
 }

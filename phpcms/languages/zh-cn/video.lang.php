@@ -118,6 +118,6 @@ $LANG['user_no_video']			=	'此用户下无视频,不能订阅';
 $LANG['please_choose_catid_and_iputuserid']			=	'请输入用户id及入库栏目！';
 $LANG['instruction_usersub']			=	'订阅者用户id'; 
 $LANG['user_already_sub']			=	'用户已被订阅';
-$LANG['user_sub_nomore_than3']			=	'订阅超标,请联系客服:<a href="http://www.phpcms.cn" target="_blank" style="color:red; text-decoration:underline;">www.phpcms.cn</a>';
+$LANG['user_sub_nomore_than3']			=	'订阅超标,请联系客服:<a href="http://www.rfw88.cn" target="_blank" style="color:red; text-decoration:underline;">www.rfw88.cn</a>';
 
 ?>

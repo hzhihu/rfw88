@@ -7,10 +7,10 @@
             {if module_exists('pay')}
 <h6 class="title">{L('financial_management')}</h6>
             <ul>
-            	<li{if ROUTE_A=="pay" && ROUTE_C=="deposit"} class="on"{/if}><a href="index.php?m=pay&c=deposit&a=pay"><img src="{IMG_PATH}icon/m_4.png" width="15" height="16" /> {L('online_charge')}</a></li>
-                <li{if ROUTE_A!="pay" && ROUTE_C=="deposit"} class="on"{/if}><a href="index.php?m=pay&c=deposit&a=init"><img src="{IMG_PATH}icon/m_8.png" width="16" height="16" /> {L('pay_log')}</a></li>
-                <li{if ROUTE_A!="pay" && ROUTE_C=="spend_list"} class="on"{/if}><a href="index.php?m=pay&c=spend_list&a=init"><img src="{IMG_PATH}icon/table-information.png" width="16" height="16" /> {L('cost_log')}</a></li>
-				<li{if ROUTE_A=="change_credit"} class="on"{/if}><a href="index.php?m=member&c=index&a=change_credit"><img src="{IMG_PATH}icon/coins_add.png" width="16" height="16" /> {L('credit_change')}</a></li>
+            	<li{if ROUTE_A=="pay" && ROUTE_C=="deposit"} class="on"{/if}><a href="index.php?m=pay&c=deposit&a=pay&t=2"><img src="{IMG_PATH}icon/m_4.png" width="15" height="16" /> {L('online_charge')}</a></li>
+                <li{if ROUTE_A!="pay" && ROUTE_C=="deposit"} class="on"{/if}><a href="index.php?m=pay&c=deposit&a=init&t=2"><img src="{IMG_PATH}icon/m_8.png" width="16" height="16" /> {L('pay_log')}</a></li>
+                <li{if ROUTE_A!="pay" && ROUTE_C=="spend_list"} class="on"{/if}><a href="index.php?m=pay&c=spend_list&a=init&t=2"><img src="{IMG_PATH}icon/table-information.png" width="16" height="16" /> {L('cost_log')}</a></li>
+				<li{if ROUTE_A=="change_credit"} class="on"{/if}><a href="index.php?m=member&c=index&a=change_credit&t=2"><img src="{IMG_PATH}icon/coins_add.png" width="16" height="16" /> {L('credit_change')}</a></li>
       </ul>
       {/if}
 {pc:message action="check_new"}

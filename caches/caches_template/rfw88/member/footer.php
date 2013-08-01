@@ -6,7 +6,7 @@
 <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 <a href="<?php echo APP_PATH;?>index.php?m=link" target="_blank">友情链接</a>
 
-<p class="cp">Powered by <strong><a href="http://www.phpcms.cn" target="_blank">PHPCMS</a></strong> <em>v9</em> &copy; <?php echo date('Y', SYS_TIME);?> <img src="<?php echo IMG_PATH;?>copyright.gif"/>
+<p class="cp">Powered by <strong><a href="http://www.hzhihu.cn" target="_blank">hzhihu</a></strong> <em>v9</em> &copy; <?php echo date('Y', SYS_TIME);?> <img src="<?php echo IMG_PATH;?>copyright.gif"/>
 </p>
 </div>
 </body>

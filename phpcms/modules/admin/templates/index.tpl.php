@@ -59,7 +59,7 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
 </div>
 <div class="header">
 	<div class="logo lf"><a href="<?php echo $currentsite['domain']?>" target="_blank"><span class="invisible"><?php echo L('phpcms_title')?></span></a></div>
-    <div class="rt-col">
+    <div class="rt-col">  
     	<div class="tab_style white cut_line text-r"><a href="javascript:;" onclick="lock_screen()"><img src="<?php echo IMG_PATH.'icon/lockscreen.png'?>"> <?php echo L('lockscreen')?></a><span>|</span><a href="http://video.grandcloud.cn" target="_blank">视频云</a><span>|</span><a href="http://www.phpcms.cn/license/license.php" target="_blank"><?php echo L('authorization')?></a><span>|</span><a href="http://forum.grandcloud.cn/index.php" target="_blank"><?php echo L('igenus_for_postfix')?></a><span>|</span><a href="http://forum.grandcloud.cn/index.php" target="_blank"><?php echo L('help')?></a>
     <ul id="Skin">
 		<li class="s1 styleswitch" rel="styles1"></li>
@@ -67,13 +67,14 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
 		<li class="s3 styleswitch" rel="styles3"></li>
         <li class="s4 styleswitch" rel="styles4"></li>
 	</ul>
+	 
         </div>
     </div>
     <div class="col-auto">
     	<div class="log white cut_line"><?php echo L('hello'),$admin_username?>  [<?php echo $rolename?>]<span>|</span><a href="?m=admin&c=index&a=public_logout">[<?php echo L('exit')?>]</a><span>|</span>
     		<a href="<?php echo $currentsite['domain']?>" target="_blank" id="site_homepage"><?php echo L('site_homepage')?></a><span>|</span>
     		<a href="?m=member" target="_blank"><?php echo L('member_center')?></a><span>|</span>
-    		<a href="?m=search" target="_blank" id="site_search"><?php echo L('search')?></a>
+    		 <a href="?m=search" target="_blank" id="site_search"><?php echo L('search')?></a>
     	</div>
         <ul class="nav white" id="top_menu">
         <?php
@@ -103,7 +104,9 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
         </div>
     <div class="col-auto mr8">
     <div class="crumbs">
-    <div class="shortcut cu-span"><a href="?m=content&c=create_html&a=public_index&pc_hash=<?php echo $_SESSION['pc_hash'];?>" target="right"><span><?php echo L('create_index')?></span></a><a href="?m=admin&c=cache_all&a=init&pc_hash=<?php echo $_SESSION['pc_hash'];?>" target="right"><span><?php echo L('update_backup')?></span></a><a href="javascript:art.dialog({id:'map',iframe:'?m=admin&c=index&a=public_map', title:'<?php echo L('background_map')?>', width:'700', height:'500', lock:true});void(0);"><span><?php echo L('background_map')?></span></a><?php echo runhook('admin_top_left_menu')?></div>
+    <div class="shortcut cu-span">
+    <!-- <a href="?m=content&c=create_html&a=public_index&pc_hash=<?php echo $_SESSION['pc_hash'];?>" target="right"><span><?php echo L('create_index')?></span></a>  -->
+    <a href="?m=admin&c=cache_all&a=init&pc_hash=<?php echo $_SESSION['pc_hash'];?>" target="right"><span><?php echo L('update_backup')?></span></a><a href="javascript:art.dialog({id:'map',iframe:'?m=admin&c=index&a=public_map', title:'<?php echo L('background_map')?>', width:'700', height:'500', lock:true});void(0);"><span><?php echo L('background_map')?></span></a><?php echo runhook('admin_top_left_menu')?></div>
     <?php echo L('current_position')?><span id="current_pos"></span></div>
     	<div class="col-1">
         	<div class="content" style="position:relative; overflow:hidden">

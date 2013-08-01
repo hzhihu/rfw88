@@ -1,7 +1,7 @@
 <?php
 
 /*Language Format:
-Add a new file(.lang.php) with your module name at /phpcms/languages/
+Add a new file(.lang.php) with your module name at /rfw88/languages/
 translation save at the array:$LANG
 */
 $LANG['product_name'] =	'套餐名称';
@@ -44,7 +44,7 @@ $LANG['please_open_sms_platform_status'] =	'您没有开启短信平台，请在
 
 $LANG['select_scene'] =	'请选择使用场景';
 $LANG['tpl_case'] =	'短信模版';
-$LANG['tpl_remind'] =	'请选择短信模版 ( 如果你是商业定制用户，发现没有合适的模版请联系PHPCMS商务人员！ )';
+$LANG['tpl_remind'] =	'请选择短信模版 ( 如果你是商业定制用户，发现没有合适的模版请联系rfw88商务人员！ )';
 $LANG['msg_content'] =	'短信内容';
 $LANG['select_tpl'] =	'选择短信模版';
 $LANG['sms_remind'] =	'注意：群发100条以上的短信，建议先测试发送内容，以防有非法内容被屏蔽。';

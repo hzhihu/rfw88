@@ -25,5 +25,5 @@ $LANG['upgrade_success'] = '升级成功！';
 $LANG['lost'] = '丢失';
 $LANG['file_address'] = '文件地址';
 $LANG['please_check_filepri'] = '复制文件失败，请检查目录权限';
-$LANG['check_file_notice'] = '注意：文件校验为根目录下所有文件以及phpcms、api、statics三个文件夹下所有目录和文件与默认程序同名文件md5值对比的结果，如果异常请用木马扫描工具扫描该文件是否包含木马';
+$LANG['check_file_notice'] = '注意：文件校验为根目录下所有文件以及rfw88、api、statics三个文件夹下所有目录和文件与默认程序同名文件md5值对比的结果，如果异常请用木马扫描工具扫描该文件是否包含木马';
 $LANG['upgrade_notice'] = '注意：升级程序有可能覆盖模版文件，请注意备份！linux服务器需检查文件所有者权限和组权限，确保WEB SERVER用户有文件写入权限';

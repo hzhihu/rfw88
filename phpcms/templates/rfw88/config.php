@@ -1,8 +1,8 @@
 <?php return array (
   'name' => '融富网',
-  'author' => 'PHPCMS TEAM',
+  'author' => 'HZHIHU TEAM',
   'dirname' => 'default',
-  'homepage' => 'http://www.phpcms.cn/',
+  'homepage' => 'http://www.hzhihu.cn/',
   'version' => '1.0',
   'disable' => 0,
   'file_explan' => 

@@ -809,3 +809,383 @@
 <?php exit;?>07-27 22:50:47 | 2 | mkdir(): No such file or directory | phpcms/libs/classes/upload.class.php | 711
 <?php exit;?>07-27 22:50:47 | 2 | imagejpeg() expects parameter 1 to be resource, null given | phpcms/libs/classes/upload.class.php | 436
 <?php exit;?>07-27 23:40:16 | 2048 | Only variables should be passed by reference | phpcms/modules/member/index.php | 229
+<?php exit;?>07-28 23:35:39 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:36:34 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:39:33 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:39:53 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:41:28 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:41:42 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:42:03 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:42:08 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:51:30 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:53:07 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:55:41 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:56:26 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:56:49 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:56:57 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:57:07 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:57:43 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-28 23:57:48 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:03:23 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:03:28 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:04:55 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:05:15 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:07:09 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:14:51 | 256 | Magic error: unrecognized tag 'linkage|$_U.account_bank_result.bank' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 00:14:51 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:15:05 | 256 | Magic error: unrecognized tag 'linkage|$_U.account_bank_result.bank' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 00:15:05 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:15:10 | 256 | Magic error: unrecognized tag 'linkage|$_U.account_bank_result.bank' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 00:15:10 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:15:18 | 256 | Magic error: unrecognized tag 'linkage($_U.account_bank_result.bank)' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 00:15:18 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:15:20 | 256 | Magic error: unrecognized tag 'linkage($_U.account_bank_result.bank)' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 00:15:20 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:15:21 | 256 | Magic error: unrecognized tag 'linkage($_U.account_bank_result.bank)' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 00:15:21 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:17:13 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 00:17:18 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 09:41:01 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 21:22:01 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 21:36:02 | 256 | Magic error: unrecognized tag 'article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:36:02 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:36:02 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:36:02 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:36:02 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:36:02 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:36:02 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:36:02 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:36:02 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 21:37:19 | 256 | Magic error: unrecognized tag 'article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:37:19 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:37:19 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:37:19 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:37:19 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:37:19 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:37:19 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:37:19 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:37:19 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 21:38:32 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 21:38:36 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 21:38:38 | 256 | Magic error: unrecognized tag 'article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:38 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:38 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:38 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:38 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:38 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:38 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:38 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:38 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 21:38:40 | 256 | Magic error: unrecognized tag 'article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:40 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:40 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:40 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:40 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:40 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:40 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:40 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:38:40 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 21:39:00 | 256 | Magic error: unrecognized tag 'article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:39:00 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:39:00 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:39:00 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:39:00 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:39:00 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:39:00 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:39:00 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 21:39:00 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 22:03:52 | 256 | Magic error: unrecognized tag 'article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 22:03:52 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 22:03:52 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 22:03:52 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 22:03:52 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 22:03:52 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 22:03:52 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 22:03:52 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 22:03:52 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:01:35 | 256 | Magic error: unrecognized tag 'article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:35 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:35 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:35 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:35 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:35 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:35 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:35 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:35 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:01:43 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:43 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:43 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:43 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:43 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:43 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:43 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:43 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:01:46 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:46 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:46 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:46 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:46 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:46 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:46 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:46 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:01:47 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:47 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:47 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:47 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:47 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:47 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:47 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:01:47 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:15:30 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:15:30 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:15:30 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:15:30 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:15:30 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:15:30 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:15:30 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:15:30 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:16:33 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:33 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:33 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:33 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:33 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:33 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:33 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:33 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:16:46 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:46 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:46 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:46 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:46 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:46 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:46 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:16:46 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:20:02 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:02 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:02 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:02 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:02 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:02 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:02 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:02 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:20:06 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:06 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:06 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:06 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:06 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:06 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:06 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:06 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:20:09 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:09 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:09 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:09 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:09 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:09 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:09 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:09 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:20:47 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:47 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:47 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:47 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:47 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:47 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:47 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:47 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:20:51 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:51 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:51 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:51 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:51 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:51 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:51 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:20:51 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:21:17 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:17 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:17 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:17 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:17 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:17 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:17 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:17 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:21:19 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:19 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:19 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:19 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:19 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:19 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:19 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:19 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:21:53 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:53 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:53 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:53 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:53 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:53 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:53 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:53 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:21:54 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:54 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:54 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:54 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:54 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:54 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:54 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:21:54 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:22:18 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:22:18 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:22:18 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:22:18 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:22:18 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:22:18 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:22:18 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:22:18 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:23:04 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:04 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:04 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:04 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:04 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:04 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:04 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:04 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:23:18 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:18 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:18 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:18 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:18 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:18 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:18 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:23:18 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:25:04 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:04 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:04 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:04 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:04 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:04 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:04 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:04 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:25:06 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:06 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:06 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:06 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:06 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:06 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:06 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:06 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:25:10 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:10 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:10 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:10 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:10 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:10 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:10 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:10 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:25:58 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:58 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:58 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:58 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:58 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:58 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:58 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:25:58 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:26:08 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:08 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:08 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:08 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:08 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:08 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:08 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:08 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:26:09 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:09 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:09 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:09 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:09 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:09 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:09 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:09 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:26:26 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:26 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:26 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:26 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:26 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:26 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:26 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:26 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:26:41 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:41 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:41 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:41 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:41 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:41 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:41 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:26:41 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:26:41 | 2 | Missing argument 2 for image::__construct(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/base.php on line 126 and defined | phpcms/libs/classes/image.class.php | 15
+<?php exit;?>07-29 23:28:30 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:30 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:30 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:30 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:30 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:30 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:30 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:30 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:28:30 | 2 | Missing argument 2 for image::__construct(), called in /Volumes/DATA/www/phpcms/rfw88/phpcms/base.php on line 126 and defined | phpcms/libs/classes/image.class.php | 15
+<?php exit;?>07-29 23:28:45 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:45 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:45 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:45 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:45 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:45 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:45 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:28:45 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:29:20 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:20 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:20 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:20 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:20 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:20 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:20 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:20 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:29:33 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:33 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:33 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:33 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:33 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:33 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:33 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:33 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:29:35 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:35 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:35 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:35 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:35 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:35 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:35 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:29:35 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:31:58 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:31:58 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:31:58 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:31:58 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:31:58 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:31:58 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:31:58 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:31:58 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-29 23:42:23 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:42:23 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:42:23 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:42:23 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:42:23 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:42:23 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:42:23 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-29 23:42:23 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-30 14:30:16 | 256 | Magic error: unrecognized tag '/article' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-30 14:30:16 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-30 14:30:16 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-30 14:30:16 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-30 14:30:16 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-30 14:30:16 | 256 | Magic error: unrecognized tag 'loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-30 14:30:16 | 256 | Magic error: unrecognized tag '/loop' | phpcms/libs/classes/magic.class.php | 801
+<?php exit;?>07-30 14:30:16 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-30 17:53:00 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-30 20:59:53 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155
+<?php exit;?>07-30 22:11:40 | 2 | chmod(): No such file or directory | phpcms/libs/classes/magic.class.php | 155

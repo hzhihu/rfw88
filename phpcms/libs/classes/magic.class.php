@@ -17,7 +17,7 @@ if (!defined('MAGIC_DIR')) {
     define('MAGIC_DIR', dirname(__FILE__) . DIRECTORY_SEPARATOR);
 }
 
-class Magic 
+class magic 
 {
 	var $template_dir = "themes";//定义模板目录
 	

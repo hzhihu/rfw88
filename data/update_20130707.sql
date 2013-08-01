@@ -164,3 +164,32 @@ CREATE TABLE `v9_upfiles` (
   `updateip` varchar(30) DEFAULT NULL COMMENT '修改ip',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='上传文件表';
+
+DROP TABLE IF EXISTS `v9_account_bank`;
+CREATE TABLE `v9_account_bank` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT '0' COMMENT '用户ID',
+  `account` varchar(100) DEFAULT NULL COMMENT '账号',
+  `bank` varchar(50) DEFAULT NULL COMMENT '所属银行',
+  `branch` varchar(100) DEFAULT NULL COMMENT '支行',
+  `province` int(5) DEFAULT '0' COMMENT '省份',
+  `city` int(5) DEFAULT '0' COMMENT '城市',
+  `area` int(5) DEFAULT '0' COMMENT '区',
+  `addtime` varchar(11) DEFAULT NULL,
+  `addip` varchar(15) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='银行帐户';
+
+
+DROP TABLE IF EXISTS `v9_account`;
+CREATE TABLE `v9_account` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT '0' COMMENT '用户名称',
+  `total` decimal(11,2) DEFAULT '0.00' COMMENT '资金总额',
+  `use_money` decimal(11,2) DEFAULT '0.00' COMMENT '已使用资金总额',
+  `no_use_money` decimal(11,2) DEFAULT '0.00' COMMENT '没有使用资金总额',
+  `collection` decimal(11,2) DEFAULT '0.00' COMMENT '取款金额',
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='帐户金额表';

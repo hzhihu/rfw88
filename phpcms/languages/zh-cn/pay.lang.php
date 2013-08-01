@@ -141,7 +141,7 @@ $LANG['select']['cancel'] = '交易取消';
 
 $LANG['alipay'] = '支付宝';
 $LANG['alipay_account'] = '支付宝帐户';
-$LANG['alipay_tip'] = '支付宝是国内领先的独立第三方支付平台，由阿里巴巴集团创办。致力于为中国电子商务提供“简单、安全、快速”的在线支付解决方案。<a href="http://fun.alipay.com/xtsz/phpcms.htm" target="_blank"><font color="red">立即在线申请</font></a>';
+$LANG['alipay_tip'] = '支付宝是国内领先的独立第三方支付平台，由阿里巴巴集团创办。致力于为中国电子商务提供“简单、安全、快速”的在线支付解决方案。<a href="http://fun.alipay.com/xtsz/rfw88.htm" target="_blank"><font color="red">立即在线申请</font></a>';
 $LANG['alipay_key'] = '交易安全校验码(key)';
 $LANG['alipay_partner'] = '合作者身份(parterID)';
 $LANG['service_type'] = '选择接口类型';
@@ -156,7 +156,7 @@ $LANG['chinabank_account'] = '网银在线商户号';
 $LANG['chinabank_key'] = '网银在线MD5私钥';
 
 $LANG['sndapay'] = '盛付通';
-$LANG['sndapay_tip'] = '盛付通是盛大网络创办的中国领先的在线支付平台，致力于为互联网用户和企业提供便捷、安全的支付服务。通过与各大银行、通信服务商等签约合作，提供具备相当实力和信誉保障的支付服务。<a href="http://www.shengpay.com/HomePage.aspx?tag=phpcms" target="_blank"><font color="red">立即在线申请</font>';
+$LANG['sndapay_tip'] = '盛付通是盛大网络创办的中国领先的在线支付平台，致力于为互联网用户和企业提供便捷、安全的支付服务。通过与各大银行、通信服务商等签约合作，提供具备相当实力和信誉保障的支付服务。<a href="http://www.shengpay.com/HomePage.aspx?tag=rfw88" target="_blank"><font color="red">立即在线申请</font>';
 $LANG['sndapay_account'] = '盛大支付商户号';
 $LANG['sndapay_key'] = '盛大支付密钥';
 
