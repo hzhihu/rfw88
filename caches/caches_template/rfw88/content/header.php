@@ -83,8 +83,6 @@ $(function(){
 			<a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a><span> | </span>
 			<?php $n++;}unset($n); ?>
         <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
-		<a href="<?php echo APP_PATH;?>index.php?m=video&c=index&a=album">视频专辑</a> <span> | </span>
-    	<?php if($modelid) { ?><a href="<?php echo APP_PATH;?>index.php?m=content&c=search&catid=<?php echo $catid;?>">搜索</a><?php } ?>
     </div>
 	<?php } ?>
 </div>

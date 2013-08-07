@@ -2586,4 +2586,41 @@ function linkage($id)
     $result= $linkage_model->db_fetch_array($sql);
     return $result['name'];
 }
+
+function get_mktime($mktime){
+    if ($mktime=="") return "";
+    $dtime = trim(ereg_replace("[ ]{1,}"," ",$mktime));
+    $ds = explode(" ",$dtime);
+    $ymd = explode("-",$ds[0]);
+    if (isset($ds[1]) && $ds[1]!=""){
+        $hms = explode(":",$ds[1]);
+        $mt = mktime(empty($hms[0])?0:$hms[0],!isset($hms[1])?0:$hms[1],!isset($hms[2])?0:$hms[2],!isset($ymd[1])?0:$ymd[1],!isset($ymd[2])?0:$ymd[2],!isset($ymd[0])?0:$ymd[0]);
+    }else{
+        $mt = mktime(0,0,0,!isset($ymd[1])?0:$ymd[1],!isset($ymd[2])?0:$ymd[2],!isset($ymd[0])?0:$ymd[0]);
+    }
+
+    return $mt;
+}
+
+
+//去掉相应的参数
+function url_format($url, $format = ''){
+    if ($url=="") return "?";
+    $_url =  explode("?",$url);
+    $_url_for = "";
+    if (isset($_url[1]) && $_url[1]!=""){
+        $request = $_url[1];
+        if ($request != ""){
+            $_request = explode("&",$request);
+            foreach ($_request as $key => $value){
+                $_value = explode("=",$value);
+                if (trim($_value[0])!=$format){
+                    $_url_for ="&" .$value;
+                }
+            }
+        }
+        $_url_for = substr($_url_for, 1,strlen($_url_for));
+    }
+    return "?".$_url_for;
+}
 ?>

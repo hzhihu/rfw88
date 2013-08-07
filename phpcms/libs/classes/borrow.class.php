@@ -30,7 +30,7 @@ class borrow extends amount{
 	 * @return Array
 	 */
 	function GetList($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$user_id = empty($data['user_id'])?"":$data['user_id'];
 		$username = empty($data['username'])?"":$data['username'];
 	
@@ -39,7 +39,7 @@ class borrow extends amount{
 		
 		$_sql = "where 1=1 ";		 
 		if (isset($data['user_id'])  && $data['user_id']!=""){
-			$_sql .= " and p2.user_id = {$data['user_id']}";
+			$_sql .= " and p2.userid = {$data['user_id']}";
 		}
 		if (isset($data['username'])  && $data['username']!=""){
 			$_sql .= " and p2.username = '{$data['username']}'";
@@ -165,14 +165,10 @@ class borrow extends amount{
 			
 		}
 	
-		$_select = " p1.*,p2.username,p2.area as user_area ,u.username as kefu_username,p2.qq,p3.value as credit_jifen,p4.pic as credit_pic,p5.area as add_area,p1.account_yes/p1.account as scales";
+		$_select = " p1.*,p1.username,p1.account_yes/p1.account as scales";
 		$sql = "select SELECT from `{borrow}` as p1 
-				 left join `{user}` as p2 on p1.user_id=p2.user_id
-				 left join `{user_cache}` as uca on uca.user_id=p1.user_id
-				 left join `{user}` as u on u.user_id=uca.kefu_userid
-				 left join `{credit}` as p3 on p1.user_id=p3.user_id 
-				left join `{credit_rank}` as p4 on p3.value<=p4.point2  and p3.value>=p4.point1
-				 left join `{userinfo}` as p5 on p1.user_id=p5.user_id 
+				 left join `{member}` as p2 on p1.userid=p2.userid
+				 left join `{member_detail}` as p5 on p1.userid=p5.userid 
 				$_sql ORDER LIMIT";
 		//是否显示全部的信息
 		if (isset($data['limit']) ){
@@ -180,6 +176,7 @@ class borrow extends amount{
 			if ($data['limit'] != "all"){
 				$_limit = "  limit ".$data['limit'];
 			}
+			
 			$list =  $mysql->db_fetch_arrays(str_replace(array('SELECT', 'ORDER', 'LIMIT'), array($_select, $_order, $_limit), $sql));
 			
 			foreach($list as $key => $value){
@@ -240,7 +237,7 @@ class borrow extends amount{
 	 * @return Array
 	 */
 	public static function GetOne($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$_sql = "where 1=1 ";
 		if (isset($data['user_id']) && $data['user_id']!=""){
 			$_sql .= " and  p1.user_id = '{$data['user_id']}' ";
@@ -263,31 +260,32 @@ class borrow extends amount{
 		return $result;
 	}
 	public static function GetUserLog($data = array()){
-		global $mysql;
-		include_once(ROOT_PATH."modules/account/account.inc.php");
-		$_result = accountClass::GetUserLog($data);
+		$mysql=pc_base::load_model('member_model');
+		$accountClass=pc_base::load_model('account_model');
+		
+		$_result = $accountClass->GetUserLog($data);
 		$user_id = $data['user_id'];
 		$_result['borrow_account'] = 0;
-		$sql = "select sum(account) as num from `{borrow}` where user_id = '{$user_id}' and (status=3)  ";
+		$sql = "select sum(account) as num from `{borrow}` where userid = '{$user_id}' and (status=3)  ";
 		$result = $mysql->db_fetch_array($sql);
 		if ($result!=false){
 			$_result['borrow_account'] = $result['num'];//借款总额
 		}
 		
 		$_result['payment_times'] = 0;
-		$sql = "select count(account) as num from `{borrow}` where user_id = '{$user_id}' and status=3  ";
+		$sql = "select count(account) as num from `{borrow}` where userid = '{$user_id}' and status=3  ";
 		$result = $mysql->db_fetch_array($sql);
 		if ($result!=false){
 			$_result['payment_times'] = $result['num'];//借款总额
 		}
 		
-		$sql = "select count(*) as num from `{borrow}` where user_id = '{$user_id}' ";
+		$sql = "select count(*) as num from `{borrow}` where userid = '{$user_id}' ";
 		$result = $mysql->db_fetch_array($sql);
 		$_result['borrow_times'] =$result['num'];
 		$_result['max_account'] =$_result['amount'] - $_result['borrow_account'];//最大额度
 		
 		//投资详情
-		$sql = "select status,sum(account) as total_account  from `{borrow_tender}`  where user_id = '{$user_id}' group by status ";
+		$sql = "select status,sum(account) as total_account  from `{borrow_tender}`  where userid = '{$user_id}' group by status ";
 		$result = $mysql->db_fetch_arrays($sql);
 		foreach ($result as  $key =>$value){
 			$_result['invest_account'] += $value['total_account'];//投标总额
@@ -296,8 +294,12 @@ class borrow extends amount{
 			}
 		}
 		
+		
 		//利息
-		$sql = "select p1.status ,sum(p1.repay_account) as total_repay_account ,sum(p1.interest) as total_interest_account,sum(p1.capital) as total_capital_account  from `{borrow_collection}` as p1 left join `{borrow_tender}` as p2  on p1.tender_id = p2.id  where p2.status=1  and  p2.user_id = '{$user_id}' and p2.borrow_id in (select id from `{borrow}` where status=3)  group by p1.status ";
+		$sql = "select p1.status ,sum(p1.repay_account) as total_repay_account ,sum(p1.interest) as total_interest_account,sum(p1.capital) as total_capital_account  
+		from `{borrow_collection}` as p1 
+		left join `{borrow_tender}` as p2  on p1.tender_id = p2.id  
+		where p2.status=1  and  p2.userid = '{$user_id}' and p2.borrow_id in (select id from `{borrow}` where status=3)  group by p1.status ";
 		$result = $mysql->db_fetch_arrays($sql);
 		foreach ($result as  $key =>$value){
 			$_result['success_account'] += $value['total_capital_account'];//投标总额
@@ -317,12 +319,16 @@ class borrow extends amount{
 				$_result['collection_capital2'] += $value['total_capital_account'];
 			}
 		}
+		
 		$_result['collection_wait'] = 	$_result['collection_capital0'] + $_result['collection_interest0'];//待回收
 		$_result['collection_yes'] = 	$_result['collection_capital1'] + $_result['collection_interest1']+$_result['collection_capital2'] + $_result['collection_interest2'];//已回收
 		$_result['collection_capital1'] = $_result['collection_capital1']+$_result['collection_capital2'];
 		//$_result['success_account'] = $_result['collection_capital0'] + $_result['collection_capital1'] + $_result['collection_capital2'];//借出总额
 		//最近收款日期
-		$sql = "select p1.repay_time  from `{borrow_collection}` as p1 left join `{borrow_tender}` as p2  on p1.tender_id = p2.id  where p2.status=1 and p1.status=0  and  p2.user_id = '{$user_id}' and p1.repay_time>".time()." order by p1.repay_time asc";
+		$sql = "select p1.repay_time  
+		from `{borrow_collection}` as p1 
+		left join `{borrow_tender}` as p2  on p1.tender_id = p2.id  
+		where p2.status=1 and p1.status=0  and  p2.userid = '{$user_id}' and p1.repay_time>".time()." order by p1.repay_time asc";
 		$result = $mysql->db_fetch_array($sql);
 		$_result['collection_repaytime'] = $result['repay_time'];
 		
@@ -332,7 +338,8 @@ class borrow extends amount{
 
 		
 		//额度管理
-		$_result_amount = amountClass::GetAmountOne($user_id);
+		$_result_amount = amount::GetAmountOne($user_id);
+		
 		$_result = array_merge ($_result, $_result_amount);
 		
 		//可用担保额度应该是借要借入的担保标和已经成功借入的担保标
@@ -361,20 +368,25 @@ class borrow extends amount{
 		*/
 		
 		//最近还款时间和总额
-		$sql = "select repayment_time,repayment_account from `{borrow_repayment}` where status !=1 and borrow_id in (select id from `{borrow}` where user_id = {$user_id} and status=3) order by repayment_time ";
+		$sql = "select repayment_time,repayment_account from `{borrow_repayment}` 
+		where status !=1 and borrow_id in (select id from `{borrow}` where userid = {$user_id} and status=3) order by repayment_time ";
 		$result = $mysql->db_fetch_array($sql);
 		$_result['new_repay_time'] = $result['repayment_time'];
 		$_result['new_repay_account'] = $result['repayment_account'];
 		
 		//最近收款时间和时间
-		$sql = "select repay_time,repay_account  from `{borrow_collection}` where tender_id in ( select p2.id from `{borrow_tender}`  as p2 left join `{borrow}` as p3 on p2.borrow_id=p3.id where p3.status=3 and p2.user_id = '{$user_id}' and p2.status=1) and repay_time > ".time()." and status=0 order by repay_time asc";
+		$sql = "select repay_time,repay_account  from `{borrow_collection}`
+		 where tender_id in ( select p2.id from `{borrow_tender}`  as p2 
+		left join `{borrow}` as p3 on p2.borrow_id=p3.id 
+		where p3.status=3 and p2.userid = '{$user_id}' and p2.status=1) and repay_time > ".time()." and status=0 order by repay_time asc";
 		$result = $mysql->db_fetch_array($sql);
 		$_result['new_collection_time'] = $result['repay_time'];
 		$_result['new_collection_account'] = $result['repay_account'];
 		
 		//网站垫付总额
 			//最近收款时间和时间
-		$sql = "select sum(repay_account) as num_late_repay_account ,sum(interest) as num_late_interes from `{borrow_collection}` where tender_id in ( select id from `{borrow_tender}` where user_id = '{$user_id}' and status=1)  and status=2 order by repay_time asc";
+		$sql = "select sum(repay_account) as num_late_repay_account ,sum(interest) as num_late_interes 
+		from `{borrow_collection}` where tender_id in ( select id from `{borrow_tender}` where userid = '{$user_id}' and status=1)  and status=2 order by repay_time asc";
 		$result = $mysql->db_fetch_array($sql);
 		$_result['num_late_repay_account'] = $result['num_late_repay_account'];
 		$_result['num_late_interes'] = $result['num_late_interes'];
@@ -539,7 +551,7 @@ class borrow extends amount{
 	 * @return Boolen
 	 */
 	function Add($data = array()){
-		global $mysql;global $_G;
+		$mysql=pc_base::load_model('member_model');global $_G;
 		$max = isset($_G['system']['con_borrow_maxaccount'])?$_G['system']['con_borrow_maxaccount']:"50000";
 		$min = isset($_G['system']['con_borrow_minaccount'])?$_G['system']['con_borrow_minaccount']:"500";
 		$apr = isset($_G['system']['con_borrow_apr'])?$_G['system']['con_borrow_apr']:"22.18";
@@ -597,7 +609,7 @@ class borrow extends amount{
 	 * @return Boolen
 	 */
 	function Update($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$user_id = $data['user_id'];
         if ($data['user_id'] == "") {
             return self::ERROR;
@@ -620,7 +632,7 @@ class borrow extends amount{
 	 * @return Boolen
 	 */
 	function Action($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$id = $data['id'];
         if ($data['id'] == "") {
             return self::ERROR;
@@ -642,7 +654,7 @@ class borrow extends amount{
 	 * @return Boolen
 	 */
 	function Verify($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		
 		$sql = "update `{borrow}` set verify_time='".time()."',verify_user='{$data['verify_user']}',verify_remark='{$data['verify_remark']}',status='{$data['status']}' where  id='{$data['id']}' ";
 		$result = $mysql->db_query($sql);
@@ -658,7 +670,7 @@ class borrow extends amount{
 	 * @return Boolen
 	 */
 	public static function Delete($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$id = $data['id'];
 		if (!is_array($id)){
 			$id = array($id);
@@ -681,7 +693,7 @@ class borrow extends amount{
 	 * @return Boolen
 	 */
 	public static function Cancel($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$_sql = " where 1=1 ";
 		if (isset($data['id']) && $data['id']!=""){
 			$_sql .= " and id={$data['id']} ";
@@ -764,7 +776,7 @@ class borrow extends amount{
 	 * @return Array
 	 */
 		function GetTenderList($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$user_id = empty($data['user_id'])?"":$data['user_id'];
 		$username = empty($data['username'])?"":$data['username'];
 	
@@ -886,7 +898,7 @@ class borrow extends amount{
 	
 	//借出明细账
 	function GetTenderCollection($data){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		
 		$page = empty($data['page'])?1:$data['page'];
 		$epage = empty($data['epage'])?10:$data['epage'];
@@ -924,7 +936,7 @@ class borrow extends amount{
 	 * @return Array
 	 */
 	function GetVouchList($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$user_id = empty($data['user_id'])?"":$data['user_id'];
 		$username = empty($data['username'])?"":$data['username'];
 	
@@ -1004,7 +1016,7 @@ class borrow extends amount{
 	 * @return Array
 	 */
 	function GetTenderUserList($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		
 		$page = empty($data['page'])?1:$data['page'];
 		$epage = empty($data['epage'])?10:$data['epage'];
@@ -1082,7 +1094,7 @@ class borrow extends amount{
 	 * @return Array
 	 */
 	public static function GetTenderOne($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$id = $data['id'];
 		$sql = "select * from {borrow_tender}  where id=$id";
 		$result = $mysql->db_fetch_array($sql);
@@ -1510,7 +1522,7 @@ class borrow extends amount{
 	 */
 	
 	function GetRepaymentList($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 	
 		$page = empty($data['page'])?1:$data['page'];
 		$epage = empty($data['epage'])?10:$data['epage'];
@@ -1626,7 +1638,7 @@ class borrow extends amount{
 	
 	
 	function GetVouchRepayList($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 	
 		$page = empty($data['page'])?1:$data['page'];
 		$epage = empty($data['epage'])?10:$data['epage'];
@@ -1819,7 +1831,7 @@ class borrow extends amount{
 	 * @return Array
 	 */
 	public static function GetRepayment($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$id = $data['id'];
 		$sql = "select * from {borrow}  where id=$id";
 		$result = $mysql->db_fetch_array($sql);
@@ -2519,10 +2531,11 @@ class borrow extends amount{
 	//获取待还总额
 	//用户id
 	function GetWaitPayment($data){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		//待还总额
 		$user_id= $data['user_id'];
-		$sql = "select status,count(1) as repay_num,sum(repayment_account) as borrow_num ,sum(capital) as capital_num ,sum(repayment_yesaccount) as borrow_yesnum from `{borrow_repayment}` where borrow_id in (select id from `{borrow}` where user_id = {$user_id} and status=3) group by status ";
+		$sql = "select status,count(1) as repay_num,sum(repayment_account) as borrow_num ,sum(capital) as capital_num ,sum(repayment_yesaccount) as borrow_yesnum 
+		from `{borrow_repayment}` where borrow_id in (select id from `{borrow}` where userid = {$user_id} and status=3) group by status ";
 		$result = $mysql -> db_fetch_arrays($sql);
 		$_result['wait_payment'] = $_result['borrow_yesnum'] = 0;
 		foreach ($result as $key => $value){
@@ -2692,7 +2705,7 @@ class borrow extends amount{
 	
 	
 	function GetBorrowAll($data=array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$user_id = $data['user_id'];
 		$sql = "select * from `{borrow}` where user_id = {$user_id}";
 		$result = $mysql->db_fetch_arrays($sql);
@@ -2744,7 +2757,7 @@ class borrow extends amount{
 	}
 	
 	function GetAll($data=array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$sql = "select sum(account) as sum from `{borrow}`";
 		$result = $mysql->db_fetch_array($sql);
 		$_result['borrow_all'] = $result['sum'];
@@ -2766,7 +2779,7 @@ class borrow extends amount{
 	}
 	
 	function ActionLiubiao($data){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$status= $data['status'];
 		if ($status==1){
 			$result = self::Cancel($data);
@@ -2946,7 +2959,7 @@ class borrow extends amount{
 	
 	//统计
 	function Tongji($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		
 		//成功借款
 		$sql = " select sum(account) as num from `{borrow}` where status=3 ";

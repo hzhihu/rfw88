@@ -8,7 +8,7 @@ class amount{
 
 
 	
-	//添加额度的记录（user_amountlog）
+	//添加额度的记录（member_amountlog）
 	//user_id 用户id
 	//type 操作的类型 
 	//amount_type 额度的类型 ，credit 信用额度  borrow_vouch 借款额度  tender 投资额度
@@ -18,10 +18,10 @@ class amount{
 	//account_nouse 不可用额度
 	//remark 额度的记录
 	function  AddAmountLog($data){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$user_id = $data['user_id'];
 		if (!isset($user_id)) return -1;//如果用户不存在，则返回
-		$sql = "insert into `{user_amountlog}` set `addtime` = '".time()."',`addip` = '".ip_address()."'";
+		$sql = "insert into `{member_amountlog}` set `addtime` = '".time()."',`addip` = '".ip_address()."'";
 		foreach($data as $key => $value){
 			$sql .= ",`$key` = '$value'";
 		}
@@ -50,12 +50,12 @@ class amount{
 		}
 	}
 	
-	//获得用户的额度（user_amount）
+	//获得用户的额度（member_amount）
 	//user_id 用户id 
 	function GetAmountOne($user_id,$type = ""){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		if (!isset($user_id)) return -1;//如果用户不存在，则返回
-		$sql = "select * from `{user_amount}` where user_id={$user_id}";
+		$sql = "select * from `{member_amount}` where userid={$user_id}";
 		$result = $mysql ->db_fetch_array($sql);
 		if ($result == false){
 			self::AddAmount($user_id);//添加记录
@@ -81,36 +81,36 @@ class amount{
 		return $result;
 	}
 	
-	//更新用户的额度信息（user_amount）
+	//更新用户的额度信息（member_amount）
 	//user_id 用户id 
 	function  UpdateAmount($data){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$user_id = $data['user_id'];
 		if (!isset($user_id)) return -1;//如果用户不存在，则返回
 		
 		self::AddAmount($user_id);//添加记录
 		
-		$sql = "update `{user_amount}` set user_id={$user_id}";
+		$sql = "update `{member_amount}` set userid={$user_id}";
 		foreach($data as $key => $value){
 			$sql .= ",`$key` = '$value'";
 		}
-		$sql .= " where user_id = {$user_id}";
+		$sql .= " where userid = {$user_id}";
         return $mysql->db_query($sql);
 	}
 	
 	
 	
-	//添加用户的额度信息（user_amount）
+	//添加用户的额度信息（member_amount）
 	//user_id 用户id 
 	function  AddAmount($user_id){
-		global $mysql,$_G;
+		$mysql=pc_base::load_model('member_model');
 		if (!isset($user_id)) return -1;//如果用户不存在，则返回
 		
 		$credit = isset($_G['system']['con_user_amount'])?$_G['system']['con_user_amount']:2000;//开始的最低额度
-		$sql = "select * from `{user_amount}` where user_id={$user_id}";
+		$sql = "select * from `{member_amount}` where userid={$user_id}";
 		$result = $mysql ->db_fetch_array($sql);
 		if ($result == false){
-		$sql = "insert into `{user_amount}` set  user_id = {$user_id},credit ={$credit},credit_use ={$credit} ";
+		$sql = "insert into `{member_amount}` set  userid = {$user_id},credit ={$credit},credit_use ={$credit} ";
         return $mysql->db_query($sql);
 		}
 		return 1;
@@ -124,7 +124,7 @@ class amount{
 	 * @return Boolen
 	 */
 	function AddAmountApply($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
         $user_id = $data['user_id'];
 		if (!isset($user_id)) return -1;//如果用户不存在，则返回
 		
@@ -139,7 +139,7 @@ class amount{
 		elseif ($data['type'] == "tender_vouch"){
 			$data["account_old"] = $result['tender_vouch'];
 		}
-		$sql = "insert into `{user_amountapply}` set `addtime` = '".time()."',`addip` = '".ip_address()."'";
+		$sql = "insert into `{member_amountapply}` set `addtime` = '".time()."',`addip` = '".ip_address()."'";
 		foreach($data as $key => $value){
 			$sql .= ",`$key` = '$value'";
 		}
@@ -150,10 +150,10 @@ class amount{
 	//id id 
 	//user_id 用户id 
 	function GetAmountApplyOne($data){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		$sql = " where 1=1 ";
 		if (isset($data['user_id'])){
-			$sql .= " and p1.user_id={$data['user_id']}  ";
+			$sql .= " and p1.userid={$data['user_id']}  ";
 		}
 		if (isset($data['id'])){
 			$sql .= " and p1.id={$data['id']} ";
@@ -161,7 +161,7 @@ class amount{
 		if (isset($data['type'])){
 			$sql .= " and p1.type='{$data['type']}' ";
 		}
-		$sql = "select p1.*,p2.username from `{user_amountapply}` as  p1 left join `{user}` as p2 on p1.user_id=p2.user_id " . $sql ." order by p1.id desc";
+		$sql = "select p1.*,p2.username from `{member_amountapply}` as  p1 left join `{user}` as p2 on p1.userid=p2.userid " . $sql ." order by p1.id desc";
 		$result = $mysql ->db_fetch_array($sql);
 		
 		return $result;
@@ -173,7 +173,7 @@ class amount{
 	 * @return Array
 	 */
 	function GetAmountList($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		
 		$page = empty($data['page'])?1:$data['page'];
 		$epage = empty($data['epage'])?10:$data['epage'];
@@ -184,7 +184,7 @@ class amount{
 			$_sql .= " and p1.status = {$data['status']}";
 		}
 		if (isset($data['user_id']) && $data['user_id']!=""){
-			$_sql .= " and p1.user_id = {$data['user_id']}";
+			$_sql .= " and p1.userid = {$data['user_id']}";
 		}
 		if (isset($data['username']) && $data['username']!=""){
 			$_sql .= " and p2.username like '%{$data['username']}%' ";
@@ -193,8 +193,8 @@ class amount{
 			$_sql .= " and p1.type like '%{$data['type']}%' ";
 		}
 		$_select = 'p1.*,p2.username';
-		$sql = "select SELECT from {user_amount} as p1 
-				left join {user} as p2 on p1.user_id=p2.user_id
+		$sql = "select SELECT from {member_amount} as p1 
+				left join {user} as p2 on p1.userid=p2.userid
 				$_sql ORDER LIMIT";
 				 
 		//是否显示全部的信息
@@ -259,7 +259,7 @@ class amount{
 		}
 		
 		//更新信息
-		$sql = "update `{user_amountapply}` set status={$data['status']},verify_time='".time()."',verify_user=".$_G['user_id'].",verify_remark='{$data['verify_remark']}',account_new='{$data['account']}' where id = {$data['id']}";
+		$sql = "update `{member_amountapply}` set status={$data['status']},verify_time='".time()."',verify_user=".$_G['user_id'].",verify_remark='{$data['verify_remark']}',account_new='{$data['account']}' where id = {$data['id']}";
 		$mysql ->db_query($sql);
 		return 1;
 	
@@ -272,7 +272,7 @@ class amount{
 	 * @return Array
 	 */
 	function GetAmountApplyList($data = array()){
-		global $mysql;
+		$mysql=pc_base::load_model('member_model');
 		
 		$page = empty($data['page'])?1:$data['page'];
 		$epage = empty($data['epage'])?10:$data['epage'];
@@ -283,7 +283,7 @@ class amount{
 			$_sql .= " and p1.status = {$data['status']}";
 		}
 		if (isset($data['user_id']) && $data['user_id']!=""){
-			$_sql .= " and p1.user_id = {$data['user_id']}";
+			$_sql .= " and p1.userid = {$data['user_id']}";
 		}
 		if (isset($data['username']) && $data['username']!=""){
 			$_sql .= " and p2.username like '%{$data['username']}%' ";
@@ -292,8 +292,8 @@ class amount{
 			$_sql .= " and p1.type like '%{$data['type']}%' ";
 		}
 		$_select = 'p1.*,p2.username';
-		$sql = "select SELECT from {user_amountapply} as p1 
-				left join {user} as p2 on p1.user_id=p2.user_id
+		$sql = "select SELECT from {member_amountapply} as p1 
+				left join {user} as p2 on p1.userid=p2.userid
 				$_sql ORDER LIMIT";
 				 
 		//是否显示全部的信息

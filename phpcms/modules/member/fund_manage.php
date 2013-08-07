@@ -31,9 +31,9 @@ class fund_manage extends foreground {
 	    $template='account_info.tpl';
 	    $content=rfwFastTpl($template, $assign, $otherConfig);
 	    $borrow=pc_base::load_sys_class('borrow');
-	    $data=array();
-	    $borrow->GetList($data);
-	    debug($borrow);
+	    $data=array('user_id'=>$this->memberinfo['userid']);
+	    $result=$borrow->GetUserLog($data);
+	    
 	    $memberinfo=$this->memberinfo;
 	    include template('member', 'fund_mangage_index');
 	}

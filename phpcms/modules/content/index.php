@@ -204,6 +204,7 @@ class index {
 	}
 	//列表页
 	public function lists() {
+	    
 		$catid = $_GET['catid'] = intval($_GET['catid']);
 		$_priv_data = $this->_category_priv($catid);
 		if($_priv_data=='-1') {
@@ -235,6 +236,7 @@ class index {
 		$template_list = $setting['list_template'] ? $setting['list_template'] : 'list';
 		
 		if($type==0) {
+		    
 			$template = $child ? $template : $template_list;
 			$arrparentid = explode(',', $arrparentid);
 			$top_parentid = $arrparentid[1] ? $arrparentid[1] : $catid;

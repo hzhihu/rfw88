@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=7" />
-<title>phpcmsV9 - <?php echo L('member','','member').L('manage_center');?></title>
+<title><?php echo L('member','','member').L('manage_center');?></title>
 <link href="<?php echo CSS_PATH;?>reset.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo CSS_PATH;?>table_form.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?php echo JS_PATH;?>jquery.min.js"></script>
